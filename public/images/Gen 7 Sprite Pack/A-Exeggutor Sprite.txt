@@ -1,0 +1,324 @@
+A-Exeggutor Sprite Guide
+
+-So because of how the engine centres things, A-Eggy's large sprite ends up in weird positions in the summary and pokedex screens. Below is a guide on how to adjust it to more reasonable positions. We went about this by shifting the sprite downards in the summary screen and upwards in the pokedex screen, however changing the direction of the shift should be reasonably self-explanatory (I tended to use values of +100 for downward shifts and -97 for upwards shifts, if you dislike this positioning you can play with it until finding a preferred position).
+Included also is functionality for the pokedex to display different information for alternate forms, as defined in the MultipleForms section.
+
+~~~In PokemonPokedex~~~
+
+Find def pbChangeToDexEntry(species)
+
+~~~Then replace the entire method with the following~~~
+
+  def pbChangeToDexEntry(species)
+    if $dexForms == nil
+      $dexForms = []
+      802.times do
+        $dexForms.push(0)
+      end      
+    end      
+    formPoke=PokeBattle_Pokemon.new(species,1)
+    formPoke.form = $dexForms[species-1] 
+    formPoke.makeNotShiny
+    @sprites["dexentry"].visible=true
+    @sprites["overlay"].visible=true
+    @sprites["overlay"].bitmap.clear
+    basecolor=Color.new(88,88,80)
+    shadowcolor=Color.new(168,184,184)
+    indexNumber=pbGetRegionalNumber(pbGetPokedexRegion(),species)
+    indexNumber=species if indexNumber==0
+    indexNumber-=1 if DEXINDEXOFFSETS.include?(pbGetPokedexRegion)
+    textpos=[
+       [_ISPRINTF("{1:03d}{2:s} {3:s}",indexNumber," ",PBSpecies.getName(species)),
+          244,40,0,Color.new(248,248,248),Color.new(0,0,0)],
+       [sprintf(_INTL("HT")),318,158,0,basecolor,shadowcolor],
+       [sprintf(_INTL("WT")),318,190,0,basecolor,shadowcolor]
+    ]
+    if $Trainer.owned[species]
+      dexdata=pbOpenDexData
+      pbDexDataOffset(dexdata,species,8)
+      type1=dexdata.fgetb
+      type2=dexdata.fgetb
+      pbDexDataOffset(dexdata,species,33)
+      height=dexdata.fgetw
+      weight=dexdata.fgetw
+      dexdata.close
+      kind=pbGetMessage(MessageTypes::Kinds,species)
+      dexentry=pbGetMessage(MessageTypes::Entries,species)     
+      inches=(height/0.254).round
+      pounds=(weight/0.45359).round
+      formType1 = MultipleForms.call("type1",formPoke)
+      if formType1!=nil
+        type1 = formType1
+      end      
+      formType2 = MultipleForms.call("type2",formPoke)
+      if formType2!=nil
+        type2 = formType2
+      end      
+      formHeight = MultipleForms.call("height",formPoke)
+      if formHeight!=nil
+        height = formHeight
+      end      
+      formWeight = MultipleForms.call("weight",formPoke)
+      if formWeight!=nil
+        weight = formWeight
+      end            
+      formEntry = MultipleForms.call("dexEntry",formPoke)
+      if formEntry!=nil
+        dexentry = formEntry
+      end            
+      textpos.push([_ISPRINTF("{1:s} Pokémon",kind),244,74,0,basecolor,shadowcolor])
+      if pbGetCountry()==0xF4 # If the user is in the United States
+        textpos.push([_ISPRINTF("{1:d}'{2:02d}\"",inches/12,inches%12),456,158,1,basecolor,shadowcolor])
+        textpos.push([_ISPRINTF("{1:4.1f} lbs.",pounds/10.0),490,190,1,basecolor,shadowcolor])
+      else
+        textpos.push([_ISPRINTF("{1:.1f} m",height/10.0),466,158,1,basecolor,shadowcolor])
+        textpos.push([_ISPRINTF("{1:.1f} kg",weight/10.0),478,190,1,basecolor,shadowcolor])
+      end
+      drawTextEx(@sprites["overlay"].bitmap,
+         42,240,Graphics.width-(42*2),4,dexentry,basecolor,shadowcolor)
+      footprintfile=pbPokemonFootprintFile(species)
+      if footprintfile
+        footprint=BitmapCache.load_bitmap(footprintfile)
+        @sprites["overlay"].bitmap.blt(226,136,footprint,footprint.rect)
+        footprint.dispose
+      end
+      pbDrawImagePositions(@sprites["overlay"].bitmap,[["Graphics/Pictures/pokedexOwned",212,42,0,0,-1,-1]])
+      typebitmap=AnimatedBitmap.new(_INTL("Graphics/Pictures/pokedexTypes"))
+      type1rect=Rect.new(0,type1*32,96,32)
+      type2rect=Rect.new(0,type2*32,96,32)
+      @sprites["overlay"].bitmap.blt(296,118,typebitmap.bitmap,type1rect)
+      @sprites["overlay"].bitmap.blt(396,118,typebitmap.bitmap,type2rect) if type1!=type2
+      typebitmap.dispose
+    else
+      textpos.push([_INTL("????? Pokémon"),244,74,0,basecolor,shadowcolor])
+      if pbGetCountry()==0xF4 # If the user is in the United States
+        textpos.push([_INTL("???'??\""),456,158,1,basecolor,shadowcolor])
+        textpos.push([_INTL("????.? lbs."),490,190,1,basecolor,shadowcolor])
+      else
+        textpos.push([_INTL("????.? m"),466,158,1,basecolor,shadowcolor])
+        textpos.push([_INTL("????.? kg"),478,190,1,basecolor,shadowcolor])
+      end
+    end
+    pbDrawTextPositions(@sprites["overlay"].bitmap,textpos)
+    #pkmnbitmap=AnimatedBitmap.new(pbPokemonBitmapFile(species,false))
+    pkmnbitmap=AnimatedBitmap.new(pbCheckPokemonBitmapFiles([formPoke.species,false,(0),false,formPoke.form,false]))   
+    if formPoke.species==103 && formPoke.form==1
+      @sprites["overlay"].bitmap.blt(
+        40-(pkmnbitmap.width-128)/2,
+        (70-(pkmnbitmap.height-128)/2)-97,
+      pkmnbitmap.bitmap,pkmnbitmap.bitmap.rect)       
+    else
+      @sprites["overlay"].bitmap.blt(
+        40-(pkmnbitmap.width-128)/2,
+        70-(pkmnbitmap.height-128)/2,
+      pkmnbitmap.bitmap,pkmnbitmap.bitmap.rect)      
+    end    
+    pkmnbitmap.dispose
+    pbPlayCry(species)
+  end
+
+
+~~~Next in PokemonNestAndForm~~~
+
+Find class PokedexFormScene
+
+~~~Replace the first two methods with the following~~~
+
+  def pbStartScene(species)
+    if $dexForms == nil
+      $dexForms = []
+      802.times do
+        $dexForms.push(0)
+      end      
+    end    
+    @viewport=Viewport.new(0,0,Graphics.width,Graphics.height)
+    @viewport.z=99999
+    @species=species
+    @gender=$Trainer.formlastseen[species][0]
+    @form=$Trainer.formlastseen[species][1]
+    @available=pbGetAvailable # [name, gender, form]
+    @sprites={}
+    @sprites["background"]=IconSprite.new(0,0,@viewport)
+    @sprites["background"].setBitmap(_INTL("Graphics/Pictures/pokedexForm"))
+    @sprites["info"]=BitmapSprite.new(Graphics.width,Graphics.height,@viewport)
+    @sprites["front"]=PokemonSprite.new(@viewport)
+    @sprites["back"]=PokemonSprite.new(@viewport)
+    @sprites["icon"]=PokemonSpeciesIconSprite.new(@species,@viewport)
+    @sprites["icon"].gender=@gender
+    @sprites["icon"].form=@form
+    @sprites["icon"].x=52
+    @sprites["icon"].y=290
+    pbUpdate
+    return true
+  end
+
+  def pbUpdate
+    @sprites["info"].bitmap.clear
+    pbSetSystemFont(@sprites["info"].bitmap)
+    name=""
+    for i in @available
+      if i[1]==@gender && i[2]==@form
+        name=i[0]
+        break
+      end
+    end
+    text=[
+       [_INTL("{1}",PBSpecies.getName(@species)),
+          (Graphics.width+72)/2,Graphics.height-86,2,
+          Color.new(88,88,80),Color.new(168,184,184)],
+       [_INTL("{1}",name),
+          (Graphics.width+72)/2,Graphics.height-54,2,
+          Color.new(88,88,80),Color.new(168,184,184)],
+    ]
+    $dexForms[@species-1] = @form
+    pbDrawTextPositions(@sprites["info"].bitmap,text)
+    frontBitmap=pbCheckPokemonBitmapFiles([@species,false,(@gender==1),false,@form,false])
+    if frontBitmap
+      frontSprite=AnimatedBitmap.new(frontBitmap)
+      @sprites["front"].bitmap=frontSprite.bitmap
+    end
+    backBitmap=pbCheckPokemonBitmapFiles([@species,true,(@gender==1),false,@form,false])
+    if backBitmap
+      backSprite=AnimatedBitmap.new(backBitmap)
+      @sprites["back"].bitmap=backSprite.bitmap
+    end
+    metrics=load_data("Data/metrics.dat")
+    backMetric=metrics[0][@species]
+    pbPositionPokemonSprite(@sprites["front"],74,96)
+    pbPositionPokemonSprite(@sprites["back"],310,96)#+16)#+backMetric*2)
+    if @species == 103 && @form == 1
+      @sprites["front"].y-=97
+      @sprites["back"].y-=85
+    end        
+#    @sprites["icon"].update
+  end
+
+~~~All references to species 103 and form 1 are the adjustments for A.Eggy.~~~
+
+~~~In PokemonSummary~~~
+
+Find def pbStartScene(party,partyindex)
+
+~~~Replace the method with the following~~~
+
+  def pbStartScene(party,partyindex)
+    @viewport=Viewport.new(0,0,Graphics.width,Graphics.height)
+    @viewport.z=99999
+    @party=party
+    @partyindex=partyindex
+    @pokemon=@party[@partyindex]
+    @sprites={}
+    @typebitmap=AnimatedBitmap.new(_INTL("Graphics/Pictures/types"))
+    @sprites["background"]=IconSprite.new(0,0,@viewport)
+    @sprites["overlay"]=BitmapSprite.new(Graphics.width,Graphics.height,@viewport)
+    @sprites["pokemon"]=PokemonSprite.new(@viewport)
+    @sprites["pokemon"].setPokemonBitmap(@pokemon)
+    @sprites["pokemon"].mirror=false
+    @sprites["pokemon"].color=Color.new(0,0,0,0)
+    pbPositionPokemonSprite(@sprites["pokemon"],40,144)
+    @sprites["pokeicon"]=PokemonBoxIcon.new(@pokemon,@viewport)
+    @sprites["pokeicon"].x=14
+    @sprites["pokeicon"].y=52
+    @sprites["pokeicon"].mirror=false
+    @sprites["pokeicon"].visible=false
+    @sprites["movepresel"]=MoveSelectionSprite.new(@viewport)
+    @sprites["movepresel"].visible=false
+    @sprites["movepresel"].preselected=true
+    @sprites["movesel"]=MoveSelectionSprite.new(@viewport)
+    @sprites["movesel"].visible=false
+    if @pokemon.species == 103 && @pokemon.form ==1
+      @sprites["pokemon"].y += 100
+    end      
+    @page=0  
+    drawPageOne(@pokemon)
+    pbFadeInAndShow(@sprites) { pbUpdate }
+  end
+
+~~~Next find def pbScene in the same class and replace with the following~~~
+
+  def pbScene
+    pbPlayCry(@pokemon)
+    loop do
+      Graphics.update
+      Input.update
+      pbUpdate
+      if Input.trigger?(Input:: B)
+        break
+      end
+      dorefresh=false
+      if Input.trigger?(Input::C)
+        if @page==0
+          break
+        elsif @page==4
+          pbMoveSelection
+          dorefresh=true
+          drawPageFive(@pokemon)
+        end
+      end
+      if Input.trigger?(Input::UP) # && @partyindex>0
+        pbGoToPrevious
+        @pokemon=@party[@partyindex]
+        @sprites["pokemon"].setPokemonBitmap(@pokemon)
+        @sprites["pokemon"].color=Color.new(0,0,0,0)
+        pbPositionPokemonSprite(@sprites["pokemon"],40,144)
+        if @pokemon.species == 103 && @pokemon.form ==1
+          @sprites["pokemon"].y += 100
+        end  
+        dorefresh=true
+        pbPlayCry(@pokemon)
+      end
+      if Input.trigger?(Input::DOWN) #&& @partyindex<@party.length-1
+        pbGoToNext
+        @pokemon=@party[@partyindex]
+        @sprites["pokemon"].setPokemonBitmap(@pokemon)
+        @sprites["pokemon"].color=Color.new(0,0,0,0)
+        pbPositionPokemonSprite(@sprites["pokemon"],40,144)
+        if @pokemon.species == 103 && @pokemon.form ==1
+          @sprites["pokemon"].y += 100
+        end          
+        dorefresh=true
+        pbPlayCry(@pokemon)
+      end
+      if Input.trigger?(Input::LEFT) && !@pokemon.isEgg?
+        oldpage=@page
+        @page-=1
+        @page=4 if @page<0
+        @page=0 if @page>4
+        dorefresh=true
+        if @page!=oldpage # Move to next page
+          pbPlayCursorSE()
+          dorefresh=true
+        end
+      end
+      if Input.trigger?(Input::RIGHT) && !@pokemon.isEgg?
+        oldpage=@page
+        @page+=1
+        @page=4 if @page<0
+        @page=0 if @page>4
+        if @page!=oldpage # Move to next page
+          pbPlayCursorSE()
+          dorefresh=true
+        end
+      end
+      if dorefresh
+        case @page
+          when 0
+            drawPageOne(@pokemon)
+          when 1
+            drawPageTwo(@pokemon)
+          when 2
+            drawPageThree(@pokemon)
+          when 3
+            drawPageFour(@pokemon)
+          when 4
+            drawPageFive(@pokemon)
+        end
+      end
+    end
+    return @partyindex
+  end
+end
+
+~~~With these changes, your pokedex should now have the functionality for displaying Alternate Form information, and Alola Exeggutor should have displays fitted properly to the Summary & Dex screens~~~
+
+Credit for these scripts should go to Marcello.

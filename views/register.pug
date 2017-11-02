@@ -1,0 +1,61 @@
+doctype html
+html
+  head
+    title Pokemon Social Marketplace
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css")
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+
+  body
+    .container
+      h2 Register with your email address
+      form#signin(name="signin" method="post" action="/register")
+        div.row
+          div(class="input-field col s6")
+            input(id="first_name" type="text" class="validate" name="first_name")
+            label(for="first_name") First Name
+
+
+          div(class="input-field col s6")
+            input(id="last_name" type="text" class="validate" name="last_name")
+            label(for="last_name") Last Name
+
+            
+          div(class="input-field col s6")
+            input(id="ds_code" type="text" class="validate" name="ds_code")
+            label(for="ds_code") 3DS Friend Code
+
+          div(class="input-field col s6")
+            input(id="email" type="text" class="validate" name="email")
+            label(for="email") Email
+
+          div(class="input-field col s6")
+            select(class="icons" name="avatar")
+              optgroup(label="Female")
+                option(value="avatar_female_1.png" data-icon="avatar_female_1.png" class="left circle") Female 1 
+                option(value="avatar_female_2.png" data-icon="avatar_female_2.png" class="left circle") Female 2
+                option(value="avatar_female_3.png" data-icon="avatar_female_3.png" class="left circle") Female 3
+                option(value="avatar_female_4.png" data-icon="avatar_female_4.png" class="left circle") Female 4
+              optgroup(label="Male")
+                option(value="avatar_male_1.png" data-icon="avatar_male_1.png" class="left circle") Male 1
+                option(value="avatar_male_2.png" data-icon="avatar_male_2.png" class="left circle") Male 2
+                option(value="avatar_male_3.png" data-icon="avatar_male_3.png" class="left circle") Male 3
+                option(value="avatar_male_4.png" data-icon="avatar_male_4.png" class="left circle") Male 4
+            label Avatar
+
+        div.row
+          div(class="input-field col s6")
+            input(id="password" type="password" class="validate" name="password")
+            label(for="password") Password
+
+          div(class="input-field col s6")
+            input(id="confirmation" type="password" class="validate" name="confirmation")
+            label(for="confirmation") Confirmation
+
+        input.btn(type="submit" value="Register Account")
+
+    script
+      include ../node_modules/jquery/dist/jquery.min.js
+      include ../node_modules/materialize-css/dist/js/materialize.min.js
+      include ../javascript/main.js

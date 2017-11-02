@@ -1,0 +1,32 @@
+Gen 7 Sprite Pack for Pokemon Essentials (updated 1/19/17)
+
+To use, add the contents of each folder to Graphics/Battlers/
+Shinies and Eggs have been kept separate for easy exclusion. All files will go in the same location in a project.
+
+An additional file is included with a script fix to position A-Exeggutor's sprite in the Pokedex and summary screens. 
+
+Feel free to use this in your projects. If you do, please add the following people to your credits:
+	Amethyst
+	Jan
+	Zumi
+	Bazaro
+	Koyo
+	Smeargletail
+	Alex
+	Noscium
+	Lepagon
+	N-kin
+	fishbowlsoul90
+	princess-phoenix
+	DatLopunnyTho
+	Conyjams 
+	kaji atsu 
+	The cynical poet
+	LuigiPlayer
+	Falgaia of the Smogon S/M sprite project
+	Pikafan2000
+	Lord-Myre
+	
+	A-Exeggutor Fix/Multiple Dex Forms scripts by Marcello
+	
+All sprites used have been posted as free-use-with-credit and edited. If you are the creator of a sprite and wish to have it removed from this pack, please contact Amethyst at http:///www.rebornevo.com/ 

@@ -1,0 +1,22 @@
+form#signin(name="signin" method="post" action="/register")
+  label(for="first_name") First name
+  input.text(id="first_name" name="first_name" type="text")
+  label(for="last_name") Last name
+  input.text(name="last_name" type="text")
+  label(for="email") Email Address
+  input.text(name="email" type="text")
+  label(for="password") Password
+  input(name="password" type="password")
+  label(for="confirmation") Confirmation
+  input(name="confirmation" type="password")
+  input.btn(type="submit" value="Sign In")
+  div(class="input-field col s12")
+    select
+      optgroup(label="female")
+        option(value="1") Option 1
+        option(value="2") Option 2
+      optgroup(label="female")
+        option(value="3") Option 1
+        option(value="4") Option 2
+    label Optgroups
+
