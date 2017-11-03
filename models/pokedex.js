@@ -16,6 +16,10 @@ module.exports = (sequelize, DataTypes) => {
       through: 'PokemonAbilities',
       foreignKey: 'pokemon_id'
     })
+    Pokedex.belongsToMany(models.Move, {
+      through: 'PokemonMoves',
+      foreignKey: 'pokemon_id'
+    })
   };
   
   return Pokedex;

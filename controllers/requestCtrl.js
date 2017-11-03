@@ -1,17 +1,30 @@
 'use strict';
 
 module.exports.renderRequest = (req, res, next) => {
-  const { Pokedex, Ability } = req.app.get('models');
-  Pokedex.findAll({
-    include: [{model: Ability}]
-  })
+  const { Pokedex } = req.app.get('models');
+  Pokedex.findAll()
   .then( (pokemon) => {
-    res.send(JSON.stringify(pokemon));
-    // res.render('request', {pokemon});
+    // res.send(JSON.stringify(pokemon));
+    res.render('request', {pokemon});
   })
   .catch( (err) => {
     next(err);
   });
+};
+
+module.exports.getAbilities = (req, res, next) => {
+  const { Ability, Pokedex, Move } = req.app.get('models');
+  Pokedex.findOne({
+    where: {pokemon_id:req.params.id},
+    include: [{model: Ability}, {model: Move}]
+  })
+  .then( (pokemon) => {
+    // res.send(JSON.stringify({pokemon}));
+    res.render('pokemonForm', {pokemon});
+    })
+    .catch( (err) => {
+      next(err);
+  })
 };
 
 module.exports.renderOffer = (req, res, next) => {

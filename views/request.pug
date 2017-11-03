@@ -6,130 +6,20 @@ html
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css")
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
-    link(href="/css/main.css" rel="stylesheet")
-    style
-      include ../node_modules/materialize-css/extras/nouislider/nouislider.css
 
   body
     .container
-      h2 What Pokemon are you looking for? 
-      form#signin(name="request" method="post" action="/request")
-        .row
-          div(class="col s12 m6 l3")
-            h5 Pokemon
-            div(class="col s12")
-              select(id="pokemon_selector")
-                option(value="" disabled selected) Pokemon
-                each pokes in pokemon
-                  option(id=key value=pokes.species_id) #{pokes.identifier}
+      h5 Pokemon
+      each pokes in pokemon
+        a(href=pokes.pokemon_id)
+          img(class="responsive-img" id="avatar" src=`/sprites/pokemon/${pokes.pokemon_id}.png`)
 
-            img(class="responsive-img" id="avatar")
+      block content
 
-          div(class="col s12 m6 l3")
-            h5 Attributes
-            .row
-              //- div(class="col s6")
-              //-   select(id="ability_selector" name="ability")
-              //-     option(value="" disabled selected) Ability
-              //-     each pokemon, key in pokedex
-              //-       each property in pokemon.abilities
-              //-         option(class="hide "+key value="no") #{property}
-
-              div(class="col s6")
-                select(id="" name="nature")
-                  option(value="" disabled selected) Nature
-                  option(value="Hardy") Hardy
-                  option(value="Lonely") Lonely
-                  option(value="Adamant") Adamant
-                  option(value="Naughty") Naughty
-                  option(value="Brave") Brave
-                  option(value="Bold") Bold
-                  option(value="Docile") Docile
-                  option(value="Impish") Impish
-                  option(value="Lax") Lax
-                  option(value="Relaxed") Relaxed
-                  option(value="Modest") Modest
-                  option(value="Mild") Mild
-                  option(value="Bashful") Bashful
-                  option(value="Rash") Rash
-                  option(value="Quiet") Quiet
-                  option(value="Calm") Calm
-                  option(value="Gentle") Gentle
-                  option(value="Careful") Careful
-                  option(value="Quirky") Quirky
-                  option(value="Sassy") Sassy
-                  option(value="Timid") Timid
-                  option(value="Hasty") Hasty
-                  option(value="Jolly") Jolly
-                  option(value="Naive") Naive
-                  option(value="Serious") Serious
-            .row
-              //- div(class="col s6")
-              //-   select(id="" name="item")
-              //-     option(value="" disabled selected) Item
-              //-     each item in items
-              //-       option(value=item.name) #{item.name}
-              div(class="col s6")
-                select(id="" name="gender")
-                  option(value="" disabled selected) Gender
-                  option(value="Female") Female
-                  option(value="Male") Male
-            .row
-              div(class="col s12")
-                div(id="test-slider" name="level")
-                label(for="test-slider") Level
-          div(class="col s12 m6 l3")
-            h5 Moves
-            select(id="" class="col s12")
-              option(value="" disabled selected name="move_1") Move 1
-                option(value="") option
-            select(id="" class="col s12")
-              option(value="" disabled selected name="move_2") Move 2
-                option(value="") option
-            select(id="" class="col s12")
-              option(value="" disabled selected name="move_3") Move 3
-                option(value="") option
-            select(id="" class="col s12")
-              option(value="" disabled selected name="move_4") Move 4
-                option(value="") option
-          div(class="col s1 m6 l3")
-            h5 IV Spread
-            select(id="" class="col s12" name="hp_iv")
-              option(value="" disabled selected) HP
-                option(value="") N/A
-                option(value="") 0
-                option(value="") 31
-            select(id="" class="col s12" name="attack_iv")
-              option(value="" disabled selected) Attack
-                option(value="") N/A
-                option(value="") 0
-                option(value="") 31
-            select(id="" class="col s12" name="defense_iv")
-              option(value="" disabled selected) Move 3
-                option(value="" disabled selected) Defense
-                option(value="") N/A
-                option(value="") 0
-                option(value="") 31
-            select(id="" class="col s12" name="sp_att_iv")
-              option(value="" disabled selected) Sp. Attack
-                option(value="") N/A
-                option(value="") 0
-                option(value="") 31
-            select(id="" class="col s12" name="sp_def_iv")
-              option(value="" disabled selected) Sp. Defense
-                option(value="") N/A
-                option(value="") 0
-                option(value="") 31
-            select(id="" class="col s12" name="speed")
-              option(value="" disabled selected) Speed
-                option(value="") N/A
-                option(value="") 0
-                option(value="") 31
-        input.btn(type="submit" value="Submit Request")
 
     script
       include ../node_modules/jquery/dist/jquery.min.js
       include ../node_modules/materialize-css/dist/js/materialize.min.js
       include ../node_modules/materialize-css/extras/nouislider/nouislider.min.js
-      include ../javascript/main.js
-      include ../javascript/pokemon.js
+    script(src="/javascript/main.js" type="text/javascript")
+    script(src="/javascript/request.js" type="text/javascript")
