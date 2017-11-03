@@ -1,0 +1,122 @@
+extends request.pug
+
+block content
+  .container
+    h2 Stats
+    form(name="request" method="post" action="/request/1")
+      .row
+        div(class="col s12 m6")
+          img(class="responsive-img" id="avatar" src=`/sprites/pokemon/${pokemon.pokemon_id}.png` height="200px" width="200px")
+          div(class="input-field")
+            input(type="text" class="validate" name="name" value=pokemon.identifier placeholder=pokemon.identifier)
+
+        div(class="col s12 m6")
+          h5 Attributes
+          .row
+            div(class="input-field col s6")
+              select(name="ability")
+                option(value="" disabled selected) Ability
+                each ability in pokemon.Abilities
+                  option(value=ability.identifier) #{ability.identifier}
+
+            div(class="input-field col s6")
+              select(name="nature")
+                option(value="" disabled selected) Nature
+                option(value="Hardy") Hardy
+                option(value="Lonely") Lonely
+                option(value="Adamant") Adamant
+                option(value="Naughty") Naughty
+                option(value="Brave") Brave
+                option(value="Bold") Bold
+                option(value="Docile") Docile
+                option(value="Impish") Impish
+                option(value="Lax") Lax
+                option(value="Relaxed") Relaxed
+                option(value="Modest") Modest
+                option(value="Mild") Mild
+                option(value="Bashful") Bashful
+                option(value="Rash") Rash
+                option(value="Quiet") Quiet
+                option(value="Calm") Calm
+                option(value="Gentle") Gentle
+                option(value="Careful") Careful
+                option(value="Quirky") Quirky
+                option(value="Sassy") Sassy
+                option(value="Timid") Timid
+                option(value="Hasty") Hasty
+                option(value="Jolly") Jolly
+                option(value="Naive") Naive
+                option(value="Serious") Serious
+          .row
+            div(class="input-field col s6")
+              select(name="item")
+                option(value="" disabled selected) Item
+                each item in items
+                  option(value=item.identifier data-icon=`/sprites/items/${item.identifier}.png`) #{item.identifier}
+                  
+            div(class="input-field col s6")
+              select(name="gender")
+                option(value="" disabled selected) Gender
+                option(value="Female") Female
+                option(value="Male") Male
+          .row
+            div(class="input-field col s12")
+              input(id="level" type="number" class="validate" name="level" value="50")
+              label(for="level") Minimum Level
+
+        div(class="col s12 m6")
+          h5 Moves
+          select(class="input-field col s12")
+            option(value="" disabled selected name="move_1") Move 1
+              each move in pokemon.Moves
+                option(value=move.identifier) #{move.identifier}
+          select(class="input-field col s12")
+            option(value="" disabled selected name="move_2") Move 2
+              each move in pokemon.Moves
+                option(value=move.identifier) #{move.identifier}
+          select(class="input-field col s12")
+            option(value="" disabled selected name="move_3") Move 3
+              each move in pokemon.Moves
+                option(value=move.identifier) #{move.identifier}
+          select(class="input-field col s12")
+            option(value="" disabled selected name="move_4") Move 4
+              each move in pokemon.Moves
+                option(value=move.identifier) #{move.identifier}
+
+        div(class="col s1 m6")
+          h5 IV Spread
+          select(class="input-field col s12" name="hp_iv")
+            option(value="null" disabled selected) HP
+              option(value="null") N/A
+              option(value="0") 0
+              option(value="31") 31
+          select(class="input-field col s12" name="attack_iv")
+            option(value="null" disabled selected) Attack
+              option(value="null") N/A
+              option(value="0") 0
+              option(value="31") 31
+          select(class="input-field col s12" name="defense_iv")
+            option(value="null" disabled selected) Defense
+              option(value="null") N/A
+              option(value="0") 0
+              option(value="31") 31
+          select(class="input-field col s12" name="sp_att_iv")
+            option(value="null" disabled selected) Sp. Attack
+              option(value="null") N/A
+              option(value="0") 0
+              option(value="31") 31
+          select(class="input-field col s12" name="sp_def_iv")
+            option(value="null" disabled selected) Sp. Defense
+              option(value="null") N/A
+              option(value="0") 0
+              option(value="31") 31
+          select(class="input-field col s12" name="speed")
+            option(value="null" disabled selected) Speed
+              option(value="null") N/A
+              option(value="0") 0
+              option(value="31") 31
+      .row
+        div(class="input-field col s12")
+          textarea(id="textarea1" class="materialize-textarea" name="comment")
+          label(for="textarea1") Additional Comments
+      input.btn(type="submit" value="Submit Request")

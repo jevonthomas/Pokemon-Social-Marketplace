@@ -1,0 +1,6941 @@
+{
+  "items":
+  [
+    {
+      "itemid": 1,
+      "identifier": "master-ball",
+      "category_id": 34,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 2,
+      "identifier": "ultra-ball",
+      "category_id": 34,
+      "cost": 800,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 3,
+      "identifier": "great-ball",
+      "category_id": 34,
+      "cost": 600,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 4,
+      "identifier": "poke-ball",
+      "category_id": 34,
+      "cost": 200,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 5,
+      "identifier": "safari-ball",
+      "category_id": 34,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 6,
+      "identifier": "net-ball",
+      "category_id": 33,
+      "cost": 1000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 7,
+      "identifier": "dive-ball",
+      "category_id": 33,
+      "cost": 1000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 8,
+      "identifier": "nest-ball",
+      "category_id": 33,
+      "cost": 1000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 9,
+      "identifier": "repeat-ball",
+      "category_id": 33,
+      "cost": 1000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 10,
+      "identifier": "timer-ball",
+      "category_id": 33,
+      "cost": 1000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 11,
+      "identifier": "luxury-ball",
+      "category_id": 33,
+      "cost": 1000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 12,
+      "identifier": "premier-ball",
+      "category_id": 33,
+      "cost": 20,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 13,
+      "identifier": "dusk-ball",
+      "category_id": 33,
+      "cost": 1000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 14,
+      "identifier": "heal-ball",
+      "category_id": 33,
+      "cost": 300,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 15,
+      "identifier": "quick-ball",
+      "category_id": 33,
+      "cost": 1000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 16,
+      "identifier": "cherish-ball",
+      "category_id": 33,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 17,
+      "identifier": "potion",
+      "category_id": 27,
+      "cost": 200,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 18,
+      "identifier": "antidote",
+      "category_id": 30,
+      "cost": 200,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 19,
+      "identifier": "burn-heal",
+      "category_id": 30,
+      "cost": 300,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 20,
+      "identifier": "ice-heal",
+      "category_id": 30,
+      "cost": 100,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 21,
+      "identifier": "awakening",
+      "category_id": 30,
+      "cost": 100,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 22,
+      "identifier": "paralyze-heal",
+      "category_id": 30,
+      "cost": 300,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 23,
+      "identifier": "full-restore",
+      "category_id": 27,
+      "cost": 3000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 24,
+      "identifier": "max-potion",
+      "category_id": 27,
+      "cost": 2500,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 25,
+      "identifier": "hyper-potion",
+      "category_id": 27,
+      "cost": 1500,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 26,
+      "identifier": "super-potion",
+      "category_id": 27,
+      "cost": 700,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 27,
+      "identifier": "full-heal",
+      "category_id": 30,
+      "cost": 400,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 28,
+      "identifier": "revive",
+      "category_id": 29,
+      "cost": 2000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 29,
+      "identifier": "max-revive",
+      "category_id": 29,
+      "cost": 4000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 30,
+      "identifier": "fresh-water",
+      "category_id": 27,
+      "cost": 200,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 31,
+      "identifier": "soda-pop",
+      "category_id": 27,
+      "cost": 300,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 32,
+      "identifier": "lemonade",
+      "category_id": 27,
+      "cost": 400,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 33,
+      "identifier": "moomoo-milk",
+      "category_id": 27,
+      "cost": 600,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 34,
+      "identifier": "energy-powder",
+      "category_id": 27,
+      "cost": 500,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 35,
+      "identifier": "energy-root",
+      "category_id": 27,
+      "cost": 1200,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 36,
+      "identifier": "heal-powder",
+      "category_id": 30,
+      "cost": 300,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 37,
+      "identifier": "revival-herb",
+      "category_id": 29,
+      "cost": 2800,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 38,
+      "identifier": "ether",
+      "category_id": 28,
+      "cost": 1200,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 39,
+      "identifier": "max-ether",
+      "category_id": 28,
+      "cost": 2000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 40,
+      "identifier": "elixir",
+      "category_id": 28,
+      "cost": 3000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 41,
+      "identifier": "max-elixir",
+      "category_id": 28,
+      "cost": 4500,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 42,
+      "identifier": "lava-cookie",
+      "category_id": 30,
+      "cost": 350,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 43,
+      "identifier": "berry-juice",
+      "category_id": 27,
+      "cost": 200,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 44,
+      "identifier": "sacred-ash",
+      "category_id": 29,
+      "cost": 50000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 45,
+      "identifier": "hp-up",
+      "category_id": 26,
+      "cost": 10000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 46,
+      "identifier": "protein",
+      "category_id": 26,
+      "cost": 10000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 47,
+      "identifier": "iron",
+      "category_id": 26,
+      "cost": 10000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 48,
+      "identifier": "carbos",
+      "category_id": 26,
+      "cost": 10000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 49,
+      "identifier": "calcium",
+      "category_id": 26,
+      "cost": 10000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 50,
+      "identifier": "rare-candy",
+      "category_id": 26,
+      "cost": 10000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 51,
+      "identifier": "pp-up",
+      "category_id": 26,
+      "cost": 10000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 52,
+      "identifier": "zinc",
+      "category_id": 26,
+      "cost": 10000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 53,
+      "identifier": "pp-max",
+      "category_id": 26,
+      "cost": 10000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 54,
+      "identifier": "old-gateau",
+      "category_id": 30,
+      "cost": 350,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 55,
+      "identifier": "guard-spec",
+      "category_id": 1,
+      "cost": 1500,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 56,
+      "identifier": "dire-hit",
+      "category_id": 1,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 57,
+      "identifier": "x-attack",
+      "category_id": 1,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 58,
+      "identifier": "x-defense",
+      "category_id": 1,
+      "cost": 2000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 59,
+      "identifier": "x-speed",
+      "category_id": 1,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 60,
+      "identifier": "x-accuracy",
+      "category_id": 1,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 61,
+      "identifier": "x-sp-atk",
+      "category_id": 1,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 62,
+      "identifier": "x-sp-def",
+      "category_id": 1,
+      "cost": 2000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 63,
+      "identifier": "poke-doll",
+      "category_id": 11,
+      "cost": 100,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 64,
+      "identifier": "fluffy-tail",
+      "category_id": 11,
+      "cost": 100,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 65,
+      "identifier": "blue-flute",
+      "category_id": 38,
+      "cost": 20,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 66,
+      "identifier": "yellow-flute",
+      "category_id": 38,
+      "cost": 20,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 67,
+      "identifier": "red-flute",
+      "category_id": 38,
+      "cost": 20,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 68,
+      "identifier": "black-flute",
+      "category_id": 11,
+      "cost": 20,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 69,
+      "identifier": "white-flute",
+      "category_id": 11,
+      "cost": 20,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 70,
+      "identifier": "shoal-salt",
+      "category_id": 9,
+      "cost": 20,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 71,
+      "identifier": "shoal-shell",
+      "category_id": 9,
+      "cost": 20,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 72,
+      "identifier": "red-shard",
+      "category_id": 9,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 73,
+      "identifier": "blue-shard",
+      "category_id": 9,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 74,
+      "identifier": "yellow-shard",
+      "category_id": 9,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 75,
+      "identifier": "green-shard",
+      "category_id": 9,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 76,
+      "identifier": "super-repel",
+      "category_id": 11,
+      "cost": 700,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 77,
+      "identifier": "max-repel",
+      "category_id": 11,
+      "cost": 900,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 78,
+      "identifier": "escape-rope",
+      "category_id": 11,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 79,
+      "identifier": "repel",
+      "category_id": 11,
+      "cost": 400,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 80,
+      "identifier": "sun-stone",
+      "category_id": 10,
+      "cost": 3000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 81,
+      "identifier": "moon-stone",
+      "category_id": 10,
+      "cost": 3000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 82,
+      "identifier": "fire-stone",
+      "category_id": 10,
+      "cost": 3000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 83,
+      "identifier": "thunder-stone",
+      "category_id": 10,
+      "cost": 3000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 84,
+      "identifier": "water-stone",
+      "category_id": 10,
+      "cost": 3000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 85,
+      "identifier": "leaf-stone",
+      "category_id": 10,
+      "cost": 3000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 86,
+      "identifier": "tiny-mushroom",
+      "category_id": 24,
+      "cost": 500,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 87,
+      "identifier": "big-mushroom",
+      "category_id": 24,
+      "cost": 5000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 88,
+      "identifier": "pearl",
+      "category_id": 24,
+      "cost": 2000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 89,
+      "identifier": "big-pearl",
+      "category_id": 24,
+      "cost": 8000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 90,
+      "identifier": "stardust",
+      "category_id": 24,
+      "cost": 3000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 91,
+      "identifier": "star-piece",
+      "category_id": 24,
+      "cost": 12000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 92,
+      "identifier": "nugget",
+      "category_id": 24,
+      "cost": 10000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 93,
+      "identifier": "heart-scale",
+      "category_id": 9,
+      "cost": 100,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 94,
+      "identifier": "honey",
+      "category_id": 35,
+      "cost": 300,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 95,
+      "identifier": "growth-mulch",
+      "category_id": 32,
+      "cost": 200,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 96,
+      "identifier": "damp-mulch",
+      "category_id": 32,
+      "cost": 200,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 97,
+      "identifier": "stable-mulch",
+      "category_id": 32,
+      "cost": 200,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 98,
+      "identifier": "gooey-mulch",
+      "category_id": 32,
+      "cost": 200,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 99,
+      "identifier": "root-fossil",
+      "category_id": 35,
+      "cost": 7000,
+      "fling_power": 100,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 100,
+      "identifier": "claw-fossil",
+      "category_id": 35,
+      "cost": 7000,
+      "fling_power": 100,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 101,
+      "identifier": "helix-fossil",
+      "category_id": 35,
+      "cost": 7000,
+      "fling_power": 100,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 102,
+      "identifier": "dome-fossil",
+      "category_id": 35,
+      "cost": 7000,
+      "fling_power": 100,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 103,
+      "identifier": "old-amber",
+      "category_id": 35,
+      "cost": 10000,
+      "fling_power": 100,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 104,
+      "identifier": "armor-fossil",
+      "category_id": 35,
+      "cost": 7000,
+      "fling_power": 100,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 105,
+      "identifier": "skull-fossil",
+      "category_id": 35,
+      "cost": 7000,
+      "fling_power": 100,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 106,
+      "identifier": "rare-bone",
+      "category_id": 24,
+      "cost": 5000,
+      "fling_power": 100,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 107,
+      "identifier": "shiny-stone",
+      "category_id": 10,
+      "cost": 3000,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 108,
+      "identifier": "dusk-stone",
+      "category_id": 10,
+      "cost": 3000,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 109,
+      "identifier": "dawn-stone",
+      "category_id": 10,
+      "cost": 3000,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 110,
+      "identifier": "oval-stone",
+      "category_id": 10,
+      "cost": 2000,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 111,
+      "identifier": "odd-keystone",
+      "category_id": 35,
+      "cost": 2100,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 112,
+      "identifier": "adamant-orb",
+      "category_id": 18,
+      "cost": 0,
+      "fling_power": 60,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 113,
+      "identifier": "lustrous-orb",
+      "category_id": 18,
+      "cost": 0,
+      "fling_power": 60,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 114,
+      "identifier": "grass-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 115,
+      "identifier": "flame-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 116,
+      "identifier": "bubble-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 117,
+      "identifier": "bloom-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 118,
+      "identifier": "tunnel-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 119,
+      "identifier": "steel-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 120,
+      "identifier": "heart-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 121,
+      "identifier": "snow-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 122,
+      "identifier": "space-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 123,
+      "identifier": "air-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 124,
+      "identifier": "mosaic-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 125,
+      "identifier": "brick-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 126,
+      "identifier": "cheri-berry",
+      "category_id": 3,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 127,
+      "identifier": "chesto-berry",
+      "category_id": 3,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 128,
+      "identifier": "pecha-berry",
+      "category_id": 3,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 129,
+      "identifier": "rawst-berry",
+      "category_id": 3,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 130,
+      "identifier": "aspear-berry",
+      "category_id": 3,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 131,
+      "identifier": "leppa-berry",
+      "category_id": 3,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 132,
+      "identifier": "oran-berry",
+      "category_id": 3,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 133,
+      "identifier": "persim-berry",
+      "category_id": 3,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 134,
+      "identifier": "lum-berry",
+      "category_id": 3,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 135,
+      "identifier": "sitrus-berry",
+      "category_id": 3,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 136,
+      "identifier": "figy-berry",
+      "category_id": 6,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 137,
+      "identifier": "wiki-berry",
+      "category_id": 6,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 138,
+      "identifier": "mago-berry",
+      "category_id": 6,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 139,
+      "identifier": "aguav-berry",
+      "category_id": 6,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 140,
+      "identifier": "iapapa-berry",
+      "category_id": 6,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 141,
+      "identifier": "razz-berry",
+      "category_id": 8,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 142,
+      "identifier": "bluk-berry",
+      "category_id": 8,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 143,
+      "identifier": "nanab-berry",
+      "category_id": 8,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 144,
+      "identifier": "wepear-berry",
+      "category_id": 8,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 145,
+      "identifier": "pinap-berry",
+      "category_id": 8,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 146,
+      "identifier": "pomeg-berry",
+      "category_id": 2,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 147,
+      "identifier": "kelpsy-berry",
+      "category_id": 2,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 148,
+      "identifier": "qualot-berry",
+      "category_id": 2,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 149,
+      "identifier": "hondew-berry",
+      "category_id": 2,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 150,
+      "identifier": "grepa-berry",
+      "category_id": 2,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 151,
+      "identifier": "tamato-berry",
+      "category_id": 2,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 152,
+      "identifier": "cornn-berry",
+      "category_id": 8,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 153,
+      "identifier": "magost-berry",
+      "category_id": 8,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 154,
+      "identifier": "rabuta-berry",
+      "category_id": 8,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 155,
+      "identifier": "nomel-berry",
+      "category_id": 8,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 156,
+      "identifier": "spelon-berry",
+      "category_id": 8,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 157,
+      "identifier": "pamtre-berry",
+      "category_id": 8,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 158,
+      "identifier": "watmel-berry",
+      "category_id": 8,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 159,
+      "identifier": "durin-berry",
+      "category_id": 8,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 160,
+      "identifier": "belue-berry",
+      "category_id": 8,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 161,
+      "identifier": "occa-berry",
+      "category_id": 7,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 162,
+      "identifier": "passho-berry",
+      "category_id": 7,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 163,
+      "identifier": "wacan-berry",
+      "category_id": 7,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 164,
+      "identifier": "rindo-berry",
+      "category_id": 7,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 165,
+      "identifier": "yache-berry",
+      "category_id": 7,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 166,
+      "identifier": "chople-berry",
+      "category_id": 7,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 167,
+      "identifier": "kebia-berry",
+      "category_id": 7,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 168,
+      "identifier": "shuca-berry",
+      "category_id": 7,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 169,
+      "identifier": "coba-berry",
+      "category_id": 7,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 170,
+      "identifier": "payapa-berry",
+      "category_id": 7,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 171,
+      "identifier": "tanga-berry",
+      "category_id": 7,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 172,
+      "identifier": "charti-berry",
+      "category_id": 7,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 173,
+      "identifier": "kasib-berry",
+      "category_id": 7,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 174,
+      "identifier": "haban-berry",
+      "category_id": 7,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 175,
+      "identifier": "colbur-berry",
+      "category_id": 7,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 176,
+      "identifier": "babiri-berry",
+      "category_id": 7,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 177,
+      "identifier": "chilan-berry",
+      "category_id": 7,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 178,
+      "identifier": "liechi-berry",
+      "category_id": 5,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 179,
+      "identifier": "ganlon-berry",
+      "category_id": 5,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 180,
+      "identifier": "salac-berry",
+      "category_id": 5,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 181,
+      "identifier": "petaya-berry",
+      "category_id": 5,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 182,
+      "identifier": "apicot-berry",
+      "category_id": 5,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 183,
+      "identifier": "lansat-berry",
+      "category_id": 5,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 184,
+      "identifier": "starf-berry",
+      "category_id": 5,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 185,
+      "identifier": "enigma-berry",
+      "category_id": 4,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 186,
+      "identifier": "micle-berry",
+      "category_id": 5,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": 3
+    },
+    {
+      "itemid": 187,
+      "identifier": "custap-berry",
+      "category_id": 5,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 188,
+      "identifier": "jaboca-berry",
+      "category_id": 4,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 189,
+      "identifier": "rowap-berry",
+      "category_id": 4,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 190,
+      "identifier": "bright-powder",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 191,
+      "identifier": "white-herb",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": 4
+    },
+    {
+      "itemid": 192,
+      "identifier": "macho-brace",
+      "category_id": 14,
+      "cost": 3000,
+      "fling_power": 60,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 193,
+      "identifier": "exp-share",
+      "category_id": 16,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 194,
+      "identifier": "quick-claw",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 195,
+      "identifier": "soothe-bell",
+      "category_id": 16,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 196,
+      "identifier": "mental-herb",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": 4
+    },
+    {
+      "itemid": 197,
+      "identifier": "choice-band",
+      "category_id": 13,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 198,
+      "identifier": "kings-rock",
+      "category_id": 12,
+      "cost": 5000,
+      "fling_power": 30,
+      "fling_effect_id": 7
+    },
+    {
+      "itemid": 199,
+      "identifier": "silver-powder",
+      "category_id": 19,
+      "cost": 1000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 200,
+      "identifier": "amulet-coin",
+      "category_id": 16,
+      "cost": 10000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 201,
+      "identifier": "cleanse-tag",
+      "category_id": 16,
+      "cost": 5000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 202,
+      "identifier": "soul-dew",
+      "category_id": 18,
+      "cost": 0,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 203,
+      "identifier": "deep-sea-tooth",
+      "category_id": 18,
+      "cost": 2000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 204,
+      "identifier": "deep-sea-scale",
+      "category_id": 18,
+      "cost": 2000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 205,
+      "identifier": "smoke-ball",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 206,
+      "identifier": "everstone",
+      "category_id": 16,
+      "cost": 3000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 207,
+      "identifier": "focus-band",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 208,
+      "identifier": "lucky-egg",
+      "category_id": 16,
+      "cost": 10000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 209,
+      "identifier": "scope-lens",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 210,
+      "identifier": "metal-coat",
+      "category_id": 19,
+      "cost": 2000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 211,
+      "identifier": "leftovers",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 212,
+      "identifier": "dragon-scale",
+      "category_id": 10,
+      "cost": 2000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 213,
+      "identifier": "light-ball",
+      "category_id": 18,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": 5
+    },
+    {
+      "itemid": 214,
+      "identifier": "soft-sand",
+      "category_id": 19,
+      "cost": 1000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 215,
+      "identifier": "hard-stone",
+      "category_id": 19,
+      "cost": 1000,
+      "fling_power": 100,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 216,
+      "identifier": "miracle-seed",
+      "category_id": 19,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 217,
+      "identifier": "black-glasses",
+      "category_id": 19,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 218,
+      "identifier": "black-belt",
+      "category_id": 19,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 219,
+      "identifier": "magnet",
+      "category_id": 19,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 220,
+      "identifier": "mystic-water",
+      "category_id": 19,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 221,
+      "identifier": "sharp-beak",
+      "category_id": 19,
+      "cost": 1000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 222,
+      "identifier": "poison-barb",
+      "category_id": 19,
+      "cost": 1000,
+      "fling_power": 70,
+      "fling_effect_id": 6
+    },
+    {
+      "itemid": 223,
+      "identifier": "never-melt-ice",
+      "category_id": 19,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 224,
+      "identifier": "spell-tag",
+      "category_id": 19,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 225,
+      "identifier": "twisted-spoon",
+      "category_id": 19,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 226,
+      "identifier": "charcoal",
+      "category_id": 19,
+      "cost": 1000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 227,
+      "identifier": "dragon-fang",
+      "category_id": 19,
+      "cost": 1000,
+      "fling_power": 70,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 228,
+      "identifier": "silk-scarf",
+      "category_id": 19,
+      "cost": 1000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 229,
+      "identifier": "up-grade",
+      "category_id": 10,
+      "cost": 2000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 230,
+      "identifier": "shell-bell",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 231,
+      "identifier": "sea-incense",
+      "category_id": 19,
+      "cost": 2000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 232,
+      "identifier": "lax-incense",
+      "category_id": 12,
+      "cost": 5000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 233,
+      "identifier": "lucky-punch",
+      "category_id": 18,
+      "cost": 1000,
+      "fling_power": 40,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 234,
+      "identifier": "metal-powder",
+      "category_id": 18,
+      "cost": 1000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 235,
+      "identifier": "thick-club",
+      "category_id": 18,
+      "cost": 1000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 236,
+      "identifier": "stick",
+      "category_id": 18,
+      "cost": 1000,
+      "fling_power": 60,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 237,
+      "identifier": "red-scarf",
+      "category_id": 36,
+      "cost": 100,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 238,
+      "identifier": "blue-scarf",
+      "category_id": 36,
+      "cost": 100,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 239,
+      "identifier": "pink-scarf",
+      "category_id": 36,
+      "cost": 100,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 240,
+      "identifier": "green-scarf",
+      "category_id": 36,
+      "cost": 100,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 241,
+      "identifier": "yellow-scarf",
+      "category_id": 36,
+      "cost": 100,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 242,
+      "identifier": "wide-lens",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 243,
+      "identifier": "muscle-band",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 244,
+      "identifier": "wise-glasses",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 245,
+      "identifier": "expert-belt",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 246,
+      "identifier": "light-clay",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 247,
+      "identifier": "life-orb",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 248,
+      "identifier": "power-herb",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 249,
+      "identifier": "toxic-orb",
+      "category_id": 15,
+      "cost": 4000,
+      "fling_power": 30,
+      "fling_effect_id": 1
+    },
+    {
+      "itemid": 250,
+      "identifier": "flame-orb",
+      "category_id": 15,
+      "cost": 4000,
+      "fling_power": 30,
+      "fling_effect_id": 2
+    },
+    {
+      "itemid": 251,
+      "identifier": "quick-powder",
+      "category_id": 18,
+      "cost": 1000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 252,
+      "identifier": "focus-sash",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 253,
+      "identifier": "zoom-lens",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 254,
+      "identifier": "metronome",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 255,
+      "identifier": "iron-ball",
+      "category_id": 15,
+      "cost": 4000,
+      "fling_power": 130,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 256,
+      "identifier": "lagging-tail",
+      "category_id": 15,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 257,
+      "identifier": "destiny-knot",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 258,
+      "identifier": "black-sludge",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 259,
+      "identifier": "icy-rock",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 40,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 260,
+      "identifier": "smooth-rock",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 261,
+      "identifier": "heat-rock",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 60,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 262,
+      "identifier": "damp-rock",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 60,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 263,
+      "identifier": "grip-claw",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 264,
+      "identifier": "choice-scarf",
+      "category_id": 13,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 265,
+      "identifier": "sticky-barb",
+      "category_id": 15,
+      "cost": 4000,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 266,
+      "identifier": "power-bracer",
+      "category_id": 14,
+      "cost": 3000,
+      "fling_power": 70,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 267,
+      "identifier": "power-belt",
+      "category_id": 14,
+      "cost": 3000,
+      "fling_power": 70,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 268,
+      "identifier": "power-lens",
+      "category_id": 14,
+      "cost": 3000,
+      "fling_power": 70,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 269,
+      "identifier": "power-band",
+      "category_id": 14,
+      "cost": 3000,
+      "fling_power": 70,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 270,
+      "identifier": "power-anklet",
+      "category_id": 14,
+      "cost": 3000,
+      "fling_power": 70,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 271,
+      "identifier": "power-weight",
+      "category_id": 14,
+      "cost": 3000,
+      "fling_power": 70,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 272,
+      "identifier": "shed-shell",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 273,
+      "identifier": "big-root",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 274,
+      "identifier": "choice-specs",
+      "category_id": 13,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 275,
+      "identifier": "flame-plate",
+      "category_id": 17,
+      "cost": 1000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 276,
+      "identifier": "splash-plate",
+      "category_id": 17,
+      "cost": 1000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 277,
+      "identifier": "zap-plate",
+      "category_id": 17,
+      "cost": 1000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 278,
+      "identifier": "meadow-plate",
+      "category_id": 17,
+      "cost": 1000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 279,
+      "identifier": "icicle-plate",
+      "category_id": 17,
+      "cost": 1000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 280,
+      "identifier": "fist-plate",
+      "category_id": 17,
+      "cost": 1000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 281,
+      "identifier": "toxic-plate",
+      "category_id": 17,
+      "cost": 1000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 282,
+      "identifier": "earth-plate",
+      "category_id": 17,
+      "cost": 1000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 283,
+      "identifier": "sky-plate",
+      "category_id": 17,
+      "cost": 1000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 284,
+      "identifier": "mind-plate",
+      "category_id": 17,
+      "cost": 1000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 285,
+      "identifier": "insect-plate",
+      "category_id": 17,
+      "cost": 1000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 286,
+      "identifier": "stone-plate",
+      "category_id": 17,
+      "cost": 1000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 287,
+      "identifier": "spooky-plate",
+      "category_id": 17,
+      "cost": 1000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 288,
+      "identifier": "draco-plate",
+      "category_id": 17,
+      "cost": 1000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 289,
+      "identifier": "dread-plate",
+      "category_id": 17,
+      "cost": 1000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 290,
+      "identifier": "iron-plate",
+      "category_id": 17,
+      "cost": 1000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 291,
+      "identifier": "odd-incense",
+      "category_id": 19,
+      "cost": 2000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 292,
+      "identifier": "rock-incense",
+      "category_id": 19,
+      "cost": 2000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 293,
+      "identifier": "full-incense",
+      "category_id": 15,
+      "cost": 5000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 294,
+      "identifier": "wave-incense",
+      "category_id": 19,
+      "cost": 2000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 295,
+      "identifier": "rose-incense",
+      "category_id": 19,
+      "cost": 2000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 296,
+      "identifier": "luck-incense",
+      "category_id": 16,
+      "cost": 11000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 297,
+      "identifier": "pure-incense",
+      "category_id": 16,
+      "cost": 6000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 298,
+      "identifier": "protector",
+      "category_id": 10,
+      "cost": 2000,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 299,
+      "identifier": "electirizer",
+      "category_id": 10,
+      "cost": 2000,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 300,
+      "identifier": "magmarizer",
+      "category_id": 10,
+      "cost": 2000,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 301,
+      "identifier": "dubious-disc",
+      "category_id": 10,
+      "cost": 2000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 302,
+      "identifier": "reaper-cloth",
+      "category_id": 10,
+      "cost": 2000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 303,
+      "identifier": "razor-claw",
+      "category_id": 12,
+      "cost": 5000,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 304,
+      "identifier": "razor-fang",
+      "category_id": 12,
+      "cost": 5000,
+      "fling_power": 30,
+      "fling_effect_id": 7
+    },
+    {
+      "itemid": 305,
+      "identifier": "tm01",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 306,
+      "identifier": "tm02",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 307,
+      "identifier": "tm03",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 308,
+      "identifier": "tm04",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 309,
+      "identifier": "tm05",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 310,
+      "identifier": "tm06",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 311,
+      "identifier": "tm07",
+      "category_id": 37,
+      "cost": 50000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 312,
+      "identifier": "tm08",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 313,
+      "identifier": "tm09",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 314,
+      "identifier": "tm10",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 315,
+      "identifier": "tm11",
+      "category_id": 37,
+      "cost": 50000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 316,
+      "identifier": "tm12",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 317,
+      "identifier": "tm13",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 318,
+      "identifier": "tm14",
+      "category_id": 37,
+      "cost": 30000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 319,
+      "identifier": "tm15",
+      "category_id": 37,
+      "cost": 50000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 320,
+      "identifier": "tm16",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 321,
+      "identifier": "tm17",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 322,
+      "identifier": "tm18",
+      "category_id": 37,
+      "cost": 50000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 323,
+      "identifier": "tm19",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 324,
+      "identifier": "tm20",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 325,
+      "identifier": "tm21",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 326,
+      "identifier": "tm22",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 327,
+      "identifier": "tm23",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 328,
+      "identifier": "tm24",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 329,
+      "identifier": "tm25",
+      "category_id": 37,
+      "cost": 30000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 330,
+      "identifier": "tm26",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 331,
+      "identifier": "tm27",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 332,
+      "identifier": "tm28",
+      "category_id": 37,
+      "cost": 30000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 333,
+      "identifier": "tm29",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 334,
+      "identifier": "tm30",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 335,
+      "identifier": "tm31",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 336,
+      "identifier": "tm32",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 337,
+      "identifier": "tm33",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 338,
+      "identifier": "tm34",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 339,
+      "identifier": "tm35",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 340,
+      "identifier": "tm36",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 341,
+      "identifier": "tm37",
+      "category_id": 37,
+      "cost": 50000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 342,
+      "identifier": "tm38",
+      "category_id": 37,
+      "cost": 30000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 343,
+      "identifier": "tm39",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 344,
+      "identifier": "tm40",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 345,
+      "identifier": "tm41",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 346,
+      "identifier": "tm42",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 347,
+      "identifier": "tm43",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 348,
+      "identifier": "tm44",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 349,
+      "identifier": "tm45",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 350,
+      "identifier": "tm46",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 351,
+      "identifier": "tm47",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 352,
+      "identifier": "tm48",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 353,
+      "identifier": "tm49",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 354,
+      "identifier": "tm50",
+      "category_id": 37,
+      "cost": 80000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 355,
+      "identifier": "tm51",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 356,
+      "identifier": "tm52",
+      "category_id": 37,
+      "cost": 30000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 357,
+      "identifier": "tm53",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 358,
+      "identifier": "tm54",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 359,
+      "identifier": "tm55",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 360,
+      "identifier": "tm56",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 361,
+      "identifier": "tm57",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 362,
+      "identifier": "tm58",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 363,
+      "identifier": "tm59",
+      "category_id": 37,
+      "cost": 30000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 364,
+      "identifier": "tm60",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 365,
+      "identifier": "tm61",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 366,
+      "identifier": "tm62",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 367,
+      "identifier": "tm63",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 368,
+      "identifier": "tm64",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 369,
+      "identifier": "tm65",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 370,
+      "identifier": "tm66",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 371,
+      "identifier": "tm67",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 372,
+      "identifier": "tm68",
+      "category_id": 37,
+      "cost": 50000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 373,
+      "identifier": "tm69",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 374,
+      "identifier": "tm70",
+      "category_id": 37,
+      "cost": 30000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 375,
+      "identifier": "tm71",
+      "category_id": 37,
+      "cost": 30000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 376,
+      "identifier": "tm72",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 377,
+      "identifier": "tm73",
+      "category_id": 37,
+      "cost": 5000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 378,
+      "identifier": "tm74",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 379,
+      "identifier": "tm75",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 380,
+      "identifier": "tm76",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 381,
+      "identifier": "tm77",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 382,
+      "identifier": "tm78",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 383,
+      "identifier": "tm79",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 384,
+      "identifier": "tm80",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 385,
+      "identifier": "tm81",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 386,
+      "identifier": "tm82",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 387,
+      "identifier": "tm83",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 388,
+      "identifier": "tm84",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 389,
+      "identifier": "tm85",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 390,
+      "identifier": "tm86",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 391,
+      "identifier": "tm87",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 392,
+      "identifier": "tm88",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 393,
+      "identifier": "tm89",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 394,
+      "identifier": "tm90",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 395,
+      "identifier": "tm91",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 396,
+      "identifier": "tm92",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 397,
+      "identifier": "hm01",
+      "category_id": 37,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 398,
+      "identifier": "hm02",
+      "category_id": 37,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 399,
+      "identifier": "hm03",
+      "category_id": 37,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 400,
+      "identifier": "hm04",
+      "category_id": 37,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 401,
+      "identifier": "hm05",
+      "category_id": 37,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 402,
+      "identifier": "hm06",
+      "category_id": 37,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 403,
+      "identifier": "hm07",
+      "category_id": 37,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 404,
+      "identifier": "hm08",
+      "category_id": 37,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 405,
+      "identifier": "explorer-kit",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 406,
+      "identifier": "loot-sack",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 407,
+      "identifier": "rule-book",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 408,
+      "identifier": "poke-radar",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 409,
+      "identifier": "point-card",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 410,
+      "identifier": "journal",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 411,
+      "identifier": "seal-case",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 412,
+      "identifier": "fashion-case",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 413,
+      "identifier": "seal-bag",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 414,
+      "identifier": "pal-pad",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 415,
+      "identifier": "works-key",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 416,
+      "identifier": "old-charm",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 417,
+      "identifier": "galactic-key",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 418,
+      "identifier": "red-chain",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 419,
+      "identifier": "town-map",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 420,
+      "identifier": "vs-seeker",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 421,
+      "identifier": "coin-case",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 422,
+      "identifier": "old-rod",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 423,
+      "identifier": "good-rod",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 424,
+      "identifier": "super-rod",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 425,
+      "identifier": "sprayduck",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 426,
+      "identifier": "poffin-case",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 427,
+      "identifier": "bicycle",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 428,
+      "identifier": "suite-key",
+      "category_id": 20,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 429,
+      "identifier": "oaks-letter",
+      "category_id": 20,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 430,
+      "identifier": "lunar-wing",
+      "category_id": 20,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 431,
+      "identifier": "member-card",
+      "category_id": 20,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 432,
+      "identifier": "azure-flute",
+      "category_id": 20,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 433,
+      "identifier": "ss-ticket",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 434,
+      "identifier": "contest-pass",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 435,
+      "identifier": "magma-stone",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 436,
+      "identifier": "parcel",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 437,
+      "identifier": "coupon-1",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 438,
+      "identifier": "coupon-2",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 439,
+      "identifier": "coupon-3",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 440,
+      "identifier": "storage-key",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 441,
+      "identifier": "secret-potion",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 442,
+      "identifier": "griseous-orb",
+      "category_id": 18,
+      "cost": 0,
+      "fling_power": 60,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 443,
+      "identifier": "vs-recorder",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 444,
+      "identifier": "gracidea",
+      "category_id": 20,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 445,
+      "identifier": "secret-key",
+      "category_id": 20,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 446,
+      "identifier": "apricorn-box",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 447,
+      "identifier": "berry-pots",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 448,
+      "identifier": "squirt-bottle",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 449,
+      "identifier": "lure-ball",
+      "category_id": 39,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 450,
+      "identifier": "level-ball",
+      "category_id": 39,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 451,
+      "identifier": "moon-ball",
+      "category_id": 39,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 452,
+      "identifier": "heavy-ball",
+      "category_id": 39,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 453,
+      "identifier": "fast-ball",
+      "category_id": 39,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 454,
+      "identifier": "friend-ball",
+      "category_id": 39,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 455,
+      "identifier": "love-ball",
+      "category_id": 39,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 456,
+      "identifier": "park-ball",
+      "category_id": 34,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 457,
+      "identifier": "sport-ball",
+      "category_id": 34,
+      "cost": 300,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 458,
+      "identifier": "red-apricorn",
+      "category_id": 40,
+      "cost": 20,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 459,
+      "identifier": "blue-apricorn",
+      "category_id": 40,
+      "cost": 20,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 460,
+      "identifier": "yellow-apricorn",
+      "category_id": 40,
+      "cost": 20,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 461,
+      "identifier": "green-apricorn",
+      "category_id": 40,
+      "cost": 20,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 462,
+      "identifier": "pink-apricorn",
+      "category_id": 40,
+      "cost": 20,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 463,
+      "identifier": "white-apricorn",
+      "category_id": 40,
+      "cost": 20,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 464,
+      "identifier": "black-apricorn",
+      "category_id": 40,
+      "cost": 20,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 465,
+      "identifier": "dowsing-machine",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 466,
+      "identifier": "rage-candy-bar",
+      "category_id": 21,
+      "cost": 350,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 467,
+      "identifier": "red-orb",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 468,
+      "identifier": "blue-orb",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 469,
+      "identifier": "jade-orb",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 470,
+      "identifier": "enigma-stone",
+      "category_id": 20,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 471,
+      "identifier": "unown-report",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 472,
+      "identifier": "blue-card",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 473,
+      "identifier": "slowpoke-tail",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 474,
+      "identifier": "clear-bell",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 475,
+      "identifier": "card-key",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 476,
+      "identifier": "basement-key",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 477,
+      "identifier": "red-scale",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 478,
+      "identifier": "lost-item",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 479,
+      "identifier": "pass",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 480,
+      "identifier": "machine-part",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 481,
+      "identifier": "silver-wing",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 482,
+      "identifier": "rainbow-wing",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 483,
+      "identifier": "mystery-egg",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 484,
+      "identifier": "gb-sounds",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 485,
+      "identifier": "tidal-bell",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 486,
+      "identifier": "data-card-01",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 487,
+      "identifier": "data-card-02",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 488,
+      "identifier": "data-card-03",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 489,
+      "identifier": "data-card-04",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 490,
+      "identifier": "data-card-05",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 491,
+      "identifier": "data-card-06",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 492,
+      "identifier": "data-card-07",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 493,
+      "identifier": "data-card-08",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 494,
+      "identifier": "data-card-09",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 495,
+      "identifier": "data-card-10",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 496,
+      "identifier": "data-card-11",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 497,
+      "identifier": "data-card-12",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 498,
+      "identifier": "data-card-13",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 499,
+      "identifier": "data-card-14",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 500,
+      "identifier": "data-card-15",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 501,
+      "identifier": "data-card-16",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 502,
+      "identifier": "data-card-17",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 503,
+      "identifier": "data-card-18",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 504,
+      "identifier": "data-card-19",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 505,
+      "identifier": "data-card-20",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 506,
+      "identifier": "data-card-21",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 507,
+      "identifier": "data-card-22",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 508,
+      "identifier": "data-card-23",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 509,
+      "identifier": "data-card-24",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 510,
+      "identifier": "data-card-25",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 511,
+      "identifier": "data-card-26",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 512,
+      "identifier": "data-card-27",
+      "category_id": 41,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 513,
+      "identifier": "lock-capsule",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 514,
+      "identifier": "photo-album",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 515,
+      "identifier": "orange-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 516,
+      "identifier": "harbor-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 517,
+      "identifier": "glitter-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 518,
+      "identifier": "mech-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 519,
+      "identifier": "wood-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 520,
+      "identifier": "wave-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 521,
+      "identifier": "bead-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 522,
+      "identifier": "shadow-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 523,
+      "identifier": "tropic-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 524,
+      "identifier": "dream-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 525,
+      "identifier": "fab-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 526,
+      "identifier": "retro-mail",
+      "category_id": 25,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 527,
+      "identifier": "mach-bike",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 528,
+      "identifier": "acro-bike",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 529,
+      "identifier": "wailmer-pail",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 530,
+      "identifier": "devon-goods",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 531,
+      "identifier": "soot-sack",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 532,
+      "identifier": "pokeblock-case",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 533,
+      "identifier": "letter",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 534,
+      "identifier": "eon-ticket",
+      "category_id": 20,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 535,
+      "identifier": "scanner",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 536,
+      "identifier": "go-goggles",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 537,
+      "identifier": "meteorite",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 538,
+      "identifier": "rm-1-key",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 539,
+      "identifier": "rm-2-key",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 540,
+      "identifier": "rm-4-key",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 541,
+      "identifier": "rm-6-key",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 542,
+      "identifier": "devon-scope",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 543,
+      "identifier": "oaks-parcel",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 544,
+      "identifier": "poke-flute",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 545,
+      "identifier": "bike-voucher",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 546,
+      "identifier": "gold-teeth",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 547,
+      "identifier": "lift-key",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 548,
+      "identifier": "silph-scope",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 549,
+      "identifier": "fame-checker",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 550,
+      "identifier": "tm-case",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 551,
+      "identifier": "berry-pouch",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 552,
+      "identifier": "teachy-tv",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 553,
+      "identifier": "tri-pass",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 554,
+      "identifier": "rainbow-pass",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 555,
+      "identifier": "tea",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 556,
+      "identifier": "mysticticket",
+      "category_id": 20,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 557,
+      "identifier": "auroraticket",
+      "category_id": 20,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 558,
+      "identifier": "powder-jar",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 559,
+      "identifier": "ruby",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 560,
+      "identifier": "sapphire",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 561,
+      "identifier": "magma-emblem",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 562,
+      "identifier": "old-sea-map",
+      "category_id": 20,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 563,
+      "identifier": "douse-drive",
+      "category_id": 18,
+      "cost": 0,
+      "fling_power": 70,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 564,
+      "identifier": "shock-drive",
+      "category_id": 18,
+      "cost": 0,
+      "fling_power": 70,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 565,
+      "identifier": "burn-drive",
+      "category_id": 18,
+      "cost": 0,
+      "fling_power": 70,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 566,
+      "identifier": "chill-drive",
+      "category_id": 18,
+      "cost": 0,
+      "fling_power": 70,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 567,
+      "identifier": "sweet-heart",
+      "category_id": 27,
+      "cost": 3000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 568,
+      "identifier": "greet-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 569,
+      "identifier": "favored-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 570,
+      "identifier": "rsvp-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 571,
+      "identifier": "thanks-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 572,
+      "identifier": "inquiry-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 573,
+      "identifier": "like-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 574,
+      "identifier": "reply-mail",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 575,
+      "identifier": "bridge-mail-s",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 576,
+      "identifier": "bridge-mail-d",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 577,
+      "identifier": "bridge-mail-t",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 578,
+      "identifier": "bridge-mail-v",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 579,
+      "identifier": "bridge-mail-m",
+      "category_id": 25,
+      "cost": 50,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 580,
+      "identifier": "prism-scale",
+      "category_id": 10,
+      "cost": 2000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 581,
+      "identifier": "eviolite",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 40,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 582,
+      "identifier": "float-stone",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 583,
+      "identifier": "rocky-helmet",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 60,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 584,
+      "identifier": "air-balloon",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 585,
+      "identifier": "red-card",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 586,
+      "identifier": "ring-target",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 587,
+      "identifier": "binding-band",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 588,
+      "identifier": "absorb-bulb",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 589,
+      "identifier": "cell-battery",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 590,
+      "identifier": "eject-button",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 591,
+      "identifier": "fire-gem",
+      "category_id": 42,
+      "cost": 200,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 592,
+      "identifier": "water-gem",
+      "category_id": 42,
+      "cost": 200,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 593,
+      "identifier": "electric-gem",
+      "category_id": 42,
+      "cost": 200,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 594,
+      "identifier": "grass-gem",
+      "category_id": 42,
+      "cost": 200,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 595,
+      "identifier": "ice-gem",
+      "category_id": 42,
+      "cost": 200,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 596,
+      "identifier": "fighting-gem",
+      "category_id": 42,
+      "cost": 200,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 597,
+      "identifier": "poison-gem",
+      "category_id": 42,
+      "cost": 200,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 598,
+      "identifier": "ground-gem",
+      "category_id": 42,
+      "cost": 200,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 599,
+      "identifier": "flying-gem",
+      "category_id": 42,
+      "cost": 200,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 600,
+      "identifier": "psychic-gem",
+      "category_id": 42,
+      "cost": 200,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 601,
+      "identifier": "bug-gem",
+      "category_id": 42,
+      "cost": 200,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 602,
+      "identifier": "rock-gem",
+      "category_id": 42,
+      "cost": 200,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 603,
+      "identifier": "ghost-gem",
+      "category_id": 42,
+      "cost": 200,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 604,
+      "identifier": "dark-gem",
+      "category_id": 42,
+      "cost": 200,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 605,
+      "identifier": "steel-gem",
+      "category_id": 42,
+      "cost": 200,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 606,
+      "identifier": "health-wing",
+      "category_id": 26,
+      "cost": 300,
+      "fling_power": 20,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 607,
+      "identifier": "muscle-wing",
+      "category_id": 26,
+      "cost": 300,
+      "fling_power": 20,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 608,
+      "identifier": "resist-wing",
+      "category_id": 26,
+      "cost": 300,
+      "fling_power": 20,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 609,
+      "identifier": "genius-wing",
+      "category_id": 26,
+      "cost": 300,
+      "fling_power": 20,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 610,
+      "identifier": "clever-wing",
+      "category_id": 26,
+      "cost": 300,
+      "fling_power": 20,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 611,
+      "identifier": "swift-wing",
+      "category_id": 26,
+      "cost": 300,
+      "fling_power": 20,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 612,
+      "identifier": "pretty-wing",
+      "category_id": 24,
+      "cost": 1000,
+      "fling_power": 20,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 613,
+      "identifier": "cover-fossil",
+      "category_id": 35,
+      "cost": 7000,
+      "fling_power": 100,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 614,
+      "identifier": "plume-fossil",
+      "category_id": 35,
+      "cost": 7000,
+      "fling_power": 100,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 615,
+      "identifier": "liberty-pass",
+      "category_id": 20,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 616,
+      "identifier": "pass-orb",
+      "category_id": 12,
+      "cost": 200,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 617,
+      "identifier": "dream-ball",
+      "category_id": 33,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 618,
+      "identifier": "poke-toy",
+      "category_id": 11,
+      "cost": 100,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 619,
+      "identifier": "prop-case",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 620,
+      "identifier": "dragon-skull",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 621,
+      "identifier": "balm-mushroom",
+      "category_id": 24,
+      "cost": 15000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 622,
+      "identifier": "big-nugget",
+      "category_id": 24,
+      "cost": 40000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 623,
+      "identifier": "pearl-string",
+      "category_id": 24,
+      "cost": 30000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 624,
+      "identifier": "comet-shard",
+      "category_id": 24,
+      "cost": 60000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 625,
+      "identifier": "relic-copper",
+      "category_id": 24,
+      "cost": 0,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 626,
+      "identifier": "relic-silver",
+      "category_id": 24,
+      "cost": 0,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 627,
+      "identifier": "relic-gold",
+      "category_id": 24,
+      "cost": 60000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 628,
+      "identifier": "relic-vase",
+      "category_id": 24,
+      "cost": 0,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 629,
+      "identifier": "relic-band",
+      "category_id": 24,
+      "cost": 0,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 630,
+      "identifier": "relic-statue",
+      "category_id": 24,
+      "cost": 0,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 631,
+      "identifier": "relic-crown",
+      "category_id": 24,
+      "cost": 0,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 632,
+      "identifier": "casteliacone",
+      "category_id": 30,
+      "cost": 350,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 633,
+      "identifier": "dire-hit-2",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 634,
+      "identifier": "x-speed-2",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 635,
+      "identifier": "x-sp-atk-2",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 636,
+      "identifier": "x-sp-def-2",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 637,
+      "identifier": "x-defense-2",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 638,
+      "identifier": "x-attack-2",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 639,
+      "identifier": "x-accuracy-2",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 640,
+      "identifier": "x-speed-3",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 641,
+      "identifier": "x-sp-atk-3",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 642,
+      "identifier": "x-sp-def-3",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 643,
+      "identifier": "x-defense-3",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 644,
+      "identifier": "x-attack-3",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 645,
+      "identifier": "x-accuracy-3",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 646,
+      "identifier": "x-speed-6",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 647,
+      "identifier": "x-sp-atk-6",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 648,
+      "identifier": "x-sp-def-6",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 649,
+      "identifier": "x-defense-6",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 650,
+      "identifier": "x-attack-6",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 651,
+      "identifier": "x-accuracy-6",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 652,
+      "identifier": "ability-urge",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 653,
+      "identifier": "item-drop",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 654,
+      "identifier": "item-urge",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 655,
+      "identifier": "reset-urge",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 656,
+      "identifier": "dire-hit-3",
+      "category_id": 43,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 657,
+      "identifier": "light-stone",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 658,
+      "identifier": "dark-stone",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 659,
+      "identifier": "tm93",
+      "category_id": 37,
+      "cost": 50000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 660,
+      "identifier": "tm94",
+      "category_id": 37,
+      "cost": 30000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 661,
+      "identifier": "tm95",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 662,
+      "identifier": "xtransceiver",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 663,
+      "identifier": "god-stone",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 664,
+      "identifier": "gram-1",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 665,
+      "identifier": "gram-2",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 666,
+      "identifier": "gram-3",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 668,
+      "identifier": "dragon-gem",
+      "category_id": 42,
+      "cost": 200,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 669,
+      "identifier": "normal-gem",
+      "category_id": 42,
+      "cost": 4000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 670,
+      "identifier": "medal-box",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 671,
+      "identifier": "dna-splicers",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 673,
+      "identifier": "permit",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 674,
+      "identifier": "oval-charm",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 675,
+      "identifier": "shiny-charm",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 676,
+      "identifier": "plasma-card",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 677,
+      "identifier": "grubby-hanky",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 678,
+      "identifier": "colress-machine",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 679,
+      "identifier": "dropped-item",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 681,
+      "identifier": "reveal-glass",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 682,
+      "identifier": "weakness-policy",
+      "category_id": 12,
+      "cost": 1000,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 683,
+      "identifier": "assault-vest",
+      "category_id": 12,
+      "cost": 1000,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 684,
+      "identifier": "pixie-plate",
+      "category_id": 17,
+      "cost": 1000,
+      "fling_power": 90,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 685,
+      "identifier": "ability-capsule",
+      "category_id": 26,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 686,
+      "identifier": "whipped-dream",
+      "category_id": 10,
+      "cost": 2000,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 687,
+      "identifier": "sachet",
+      "category_id": 10,
+      "cost": 2000,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 688,
+      "identifier": "luminous-moss",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 689,
+      "identifier": "snowball",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 690,
+      "identifier": "safety-goggles",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 691,
+      "identifier": "rich-mulch",
+      "category_id": 32,
+      "cost": 200,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 692,
+      "identifier": "surprise-mulch",
+      "category_id": 32,
+      "cost": 200,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 693,
+      "identifier": "boost-mulch",
+      "category_id": 32,
+      "cost": 200,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 694,
+      "identifier": "amaze-mulch",
+      "category_id": 32,
+      "cost": 200,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 695,
+      "identifier": "gengarite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 696,
+      "identifier": "gardevoirite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 697,
+      "identifier": "ampharosite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 698,
+      "identifier": "venusaurite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 699,
+      "identifier": "charizardite-x",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 700,
+      "identifier": "blastoisinite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 701,
+      "identifier": "mewtwonite-x",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 702,
+      "identifier": "mewtwonite-y",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 703,
+      "identifier": "blazikenite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 704,
+      "identifier": "medichamite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 705,
+      "identifier": "houndoominite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 706,
+      "identifier": "aggronite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 707,
+      "identifier": "banettite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 708,
+      "identifier": "tyranitarite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 709,
+      "identifier": "scizorite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 710,
+      "identifier": "pinsirite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 711,
+      "identifier": "aerodactylite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 712,
+      "identifier": "lucarionite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 713,
+      "identifier": "abomasite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 714,
+      "identifier": "kangaskhanite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 715,
+      "identifier": "gyaradosite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 716,
+      "identifier": "absolite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 717,
+      "identifier": "charizardite-y",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 718,
+      "identifier": "alakazite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 719,
+      "identifier": "heracronite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 720,
+      "identifier": "mawilite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 721,
+      "identifier": "manectite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 722,
+      "identifier": "garchompite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 723,
+      "identifier": "roseli-berry",
+      "category_id": 7,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 724,
+      "identifier": "kee-berry",
+      "category_id": 4,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 725,
+      "identifier": "maranga-berry",
+      "category_id": 4,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 726,
+      "identifier": "discount-coupon",
+      "category_id": 24,
+      "cost": 20,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 727,
+      "identifier": "strange-souvenir",
+      "category_id": 24,
+      "cost": 3000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 728,
+      "identifier": "lumiose-galette",
+      "category_id": 30,
+      "cost": 350,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 729,
+      "identifier": "jaw-fossil",
+      "category_id": 35,
+      "cost": 7000,
+      "fling_power": 100,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 730,
+      "identifier": "sail-fossil",
+      "category_id": 35,
+      "cost": 7000,
+      "fling_power": 100,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 731,
+      "identifier": "fairy-gem",
+      "category_id": 42,
+      "cost": 200,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 732,
+      "identifier": "adventure-rules",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 733,
+      "identifier": "elevator-key",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 734,
+      "identifier": "holo-caster",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 735,
+      "identifier": "honor-of-kalos",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 736,
+      "identifier": "intriguing-stone",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 737,
+      "identifier": "lens-case",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 738,
+      "identifier": "looker-ticket",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 739,
+      "identifier": "mega-ring",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 740,
+      "identifier": "power-plant-pass",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 741,
+      "identifier": "profs-letter",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 742,
+      "identifier": "roller-skates",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 743,
+      "identifier": "sprinklotad",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 744,
+      "identifier": "tmv-pass",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 745,
+      "identifier": "tm96",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 746,
+      "identifier": "tm97",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 747,
+      "identifier": "tm98",
+      "category_id": 37,
+      "cost": 30000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 748,
+      "identifier": "tm99",
+      "category_id": 37,
+      "cost": 10000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 749,
+      "identifier": "tm100",
+      "category_id": 37,
+      "cost": 5000,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 760,
+      "identifier": "latiasite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 761,
+      "identifier": "latiosite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 762,
+      "identifier": "common-stone",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 763,
+      "identifier": "makeup-bag",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 764,
+      "identifier": "travel-trunk",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 765,
+      "identifier": "shalour-sable",
+      "category_id": 30,
+      "cost": 350,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 768,
+      "identifier": "mega-charm",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 769,
+      "identifier": "mega-glove",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 770,
+      "identifier": "devon-parts",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 772,
+      "identifier": "pokeblock-kit",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 773,
+      "identifier": "key-to-room-1",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 774,
+      "identifier": "key-to-room-2",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 775,
+      "identifier": "key-to-room-4",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 776,
+      "identifier": "key-to-room-6",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 779,
+      "identifier": "devon-scuba-gear",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 780,
+      "identifier": "contest-costume--jacket",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 782,
+      "identifier": "magma-suit",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 783,
+      "identifier": "aqua-suit",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 784,
+      "identifier": "pair-of-tickets",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 785,
+      "identifier": "mega-bracelet",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 786,
+      "identifier": "mega-pendant",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 787,
+      "identifier": "mega-glasses",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 788,
+      "identifier": "mega-anchor",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 789,
+      "identifier": "mega-stickpin",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 790,
+      "identifier": "mega-tiara",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 791,
+      "identifier": "mega-anklet",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 793,
+      "identifier": "swampertite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 794,
+      "identifier": "sceptilite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 795,
+      "identifier": "sablenite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 796,
+      "identifier": "altarianite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 797,
+      "identifier": "galladite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 798,
+      "identifier": "audinite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 799,
+      "identifier": "metagrossite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 800,
+      "identifier": "sharpedonite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 801,
+      "identifier": "slowbronite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 802,
+      "identifier": "steelixite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 803,
+      "identifier": "pidgeotite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 804,
+      "identifier": "glalitite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 805,
+      "identifier": "diancite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 806,
+      "identifier": "prison-bottle",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 807,
+      "identifier": "mega-cuff",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 808,
+      "identifier": "cameruptite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 809,
+      "identifier": "lopunnite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 810,
+      "identifier": "salamencite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 811,
+      "identifier": "beedrillite",
+      "category_id": 44,
+      "cost": 0,
+      "fling_power": 80,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 814,
+      "identifier": "key-stone",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 815,
+      "identifier": "meteorite-shard",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 816,
+      "identifier": "eon-flute",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 817,
+      "identifier": "normalium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 818,
+      "identifier": "firium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 819,
+      "identifier": "waterium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 820,
+      "identifier": "electrium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 821,
+      "identifier": "grassium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 822,
+      "identifier": "icium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 823,
+      "identifier": "fightinium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 824,
+      "identifier": "poisonium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 825,
+      "identifier": "groundium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 826,
+      "identifier": "flyinium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 827,
+      "identifier": "psychium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 828,
+      "identifier": "buginium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 829,
+      "identifier": "rockium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 830,
+      "identifier": "ghostium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 831,
+      "identifier": "dragonium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 832,
+      "identifier": "darkinium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 833,
+      "identifier": "steelium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 834,
+      "identifier": "fairium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 835,
+      "identifier": "pikanium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 836,
+      "identifier": "bottle-cap",
+      "category_id": 24,
+      "cost": 5000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 837,
+      "identifier": "gold-bottle-cap",
+      "category_id": 24,
+      "cost": 10000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 838,
+      "identifier": "z-ring",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 839,
+      "identifier": "decidium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 840,
+      "identifier": "incinium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 841,
+      "identifier": "primarium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 842,
+      "identifier": "tapunium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 843,
+      "identifier": "marshadium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 844,
+      "identifier": "aloraichium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 845,
+      "identifier": "snorlium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 846,
+      "identifier": "eevium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 847,
+      "identifier": "mewnium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 877,
+      "identifier": "pikashunium-z--held",
+      "category_id": 46,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 878,
+      "identifier": "forage-bag",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 879,
+      "identifier": "fishing-rod",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 880,
+      "identifier": "professors-mask",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 881,
+      "identifier": "festival-ticket",
+      "category_id": 21,
+      "cost": 10,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 882,
+      "identifier": "sparkling-stone",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 883,
+      "identifier": "adrenaline-orb",
+      "category_id": 12,
+      "cost": 300,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 884,
+      "identifier": "zygarde-cube",
+      "category_id": 21,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 885,
+      "identifier": "ice-stone",
+      "category_id": 10,
+      "cost": 3000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 886,
+      "identifier": "ride-pager",
+      "category_id": 23,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 887,
+      "identifier": "beast-ball",
+      "category_id": 33,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 888,
+      "identifier": "big-malasada",
+      "category_id": 30,
+      "cost": 350,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 889,
+      "identifier": "red-nectar",
+      "category_id": 18,
+      "cost": 300,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 890,
+      "identifier": "yellow-nectar",
+      "category_id": 18,
+      "cost": 300,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 891,
+      "identifier": "pink-nectar",
+      "category_id": 18,
+      "cost": 300,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 892,
+      "identifier": "purple-nectar",
+      "category_id": 18,
+      "cost": 300,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 893,
+      "identifier": "sun-flute",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 894,
+      "identifier": "moon-flute",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 895,
+      "identifier": "enigmatic-card",
+      "category_id": 22,
+      "cost": 0,
+      "fling_power": null,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 896,
+      "identifier": "terrain-extender",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 60,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 897,
+      "identifier": "protective-pads",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 30,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 898,
+      "identifier": "electric-seed",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 899,
+      "identifier": "psychic-seed",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 900,
+      "identifier": "misty-seed",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 901,
+      "identifier": "grassy-seed",
+      "category_id": 12,
+      "cost": 4000,
+      "fling_power": 10,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 902,
+      "identifier": "fighting-memory",
+      "category_id": 45,
+      "cost": 1000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 903,
+      "identifier": "flying-memory",
+      "category_id": 45,
+      "cost": 1000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 904,
+      "identifier": "poison-memory",
+      "category_id": 45,
+      "cost": 1000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 905,
+      "identifier": "ground-memory",
+      "category_id": 45,
+      "cost": 1000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 906,
+      "identifier": "rock-memory",
+      "category_id": 45,
+      "cost": 1000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 907,
+      "identifier": "bug-memory",
+      "category_id": 45,
+      "cost": 1000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 908,
+      "identifier": "ghost-memory",
+      "category_id": 45,
+      "cost": 1000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 909,
+      "identifier": "steel-memory",
+      "category_id": 45,
+      "cost": 1000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 910,
+      "identifier": "fire-memory",
+      "category_id": 45,
+      "cost": 1000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 911,
+      "identifier": "water-memory",
+      "category_id": 45,
+      "cost": 1000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 912,
+      "identifier": "grass-memory",
+      "category_id": 45,
+      "cost": 1000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 913,
+      "identifier": "electric-memory",
+      "category_id": 45,
+      "cost": 1000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 914,
+      "identifier": "psychic-memory",
+      "category_id": 45,
+      "cost": 1000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 915,
+      "identifier": "ice-memory",
+      "category_id": 45,
+      "cost": 1000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 916,
+      "identifier": "dragon-memory",
+      "category_id": 45,
+      "cost": 1000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 917,
+      "identifier": "dark-memory",
+      "category_id": 45,
+      "cost": 1000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    },
+    {
+      "itemid": 918,
+      "identifier": "fairy-memory",
+      "category_id": 45,
+      "cost": 1000,
+      "fling_power": 50,
+      "fling_effect_id": null
+    }
+   ]
+}
