@@ -9,11 +9,6 @@ html
 
   body
     .container
-      h5 Pokemon
-      each pokes in pokemon
-        a(href=pokes.pokemon_id)
-          img(class="responsive-img" id="avatar" src=`/sprites/pokemon/${pokes.pokemon_id}.png`)
-
       block content
 
 

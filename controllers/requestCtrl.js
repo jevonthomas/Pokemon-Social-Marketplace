@@ -1,29 +1,32 @@
 'use strict';
 
-module.exports.renderRequest = (req, res, next) => {
+module.exports.getAllPokemon = (req, res, next) => {
   const { Pokedex } = req.app.get('models');
   Pokedex.findAll()
   .then( (pokemon) => {
     // res.send(JSON.stringify(pokemon));
-    res.render('request', {pokemon});
+    res.render('choosePokemon', {pokemon});
   })
   .catch( (err) => {
     next(err);
   });
 };
 
-module.exports.getAbilities = (req, res, next) => {
-  const { Ability, Pokedex, Move } = req.app.get('models');
+module.exports.getChosenPokemon = (req, res, next) => {
+  const { Ability, Pokedex, Move, Item } = req.app.get('models');
   Pokedex.findOne({
     where: {pokemon_id:req.params.id},
     include: [{model: Ability}, {model: Move}]
   })
   .then( (pokemon) => {
-    // res.send(JSON.stringify({pokemon}));
-    res.render('pokemonForm', {pokemon});
-    })
-    .catch( (err) => {
-      next(err);
+    Item.findAll()
+    .then( (items) => {
+      // res.send(JSON.stringify({pokemon}));
+      res.render('pokemonForm', {pokemon, items});
+      })
+      .catch( (err) => {
+        next(err);
+      })
   })
 };
 
@@ -51,7 +54,8 @@ module.exports.postRequest = (req, res, next) => {
     defense_iv:req.body.defense_iv,
     sp_att_iv:req.body.sp_att_iv,
     sp_def_iv:req.body.sp_def_iv,
-    speed_iv:req.body.speed_iv
+    speed_iv:req.body.speed_iv,
+    comment:req.body.comment
   })
   .then( (data) => {
    res.status(200).redirect('/welcome');
