@@ -1,5 +1,20 @@
 'use strict';
 
+module.exports.getUserRequests = (req, res, next) => {
+  const { User, Request } = req.app.get('models');
+  User.findOne({
+    where: {id:req.params.id},
+    include: [{model: Request}]
+  })
+  .then( (user) => {
+    res.send(JSON.stringify(user));
+    // res.render('', {user});
+  })
+  .catch( (err) => {
+    next(err);
+  });
+};
+
 module.exports.getAllPokemon = (req, res, next) => {
   const { Pokedex } = req.app.get('models');
   Pokedex.findAll()
@@ -51,7 +66,7 @@ module.exports.postRequest = (req, res, next) => {
   console.log(req.body);
   const { Request } = req.app.get('models');
   Request.create({
-    userid:1,
+    userid:req.params.id,
     name:req.body.name,
     ability:req.body.ability,
     nature:req.body.nature,

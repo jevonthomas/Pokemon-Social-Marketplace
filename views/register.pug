@@ -33,15 +33,15 @@ html
           div(class="input-field col s6")
             select(class="icons" name="avatar")
               optgroup(label="Female")
-                option(value="avatar_female_1.png" data-icon="avatar_female_1.png" class="left circle") Female 1 
-                option(value="avatar_female_2.png" data-icon="avatar_female_2.png" class="left circle") Female 2
-                option(value="avatar_female_3.png" data-icon="avatar_female_3.png" class="left circle") Female 3
-                option(value="avatar_female_4.png" data-icon="avatar_female_4.png" class="left circle") Female 4
+                option(value="avatar_female_1.png" data-icon="/images/avatar_female_1.png" class="left") Female 1 
+                option(value="avatar_female_2.png" data-icon="/images/avatar_female_2.png" class="left") Female 2
+                option(value="avatar_female_3.png" data-icon="/images/avatar_female_3.png" class="left") Female 3
+                option(value="avatar_female_4.png" data-icon="/images/avatar_female_4.png" class="left") Female 4
               optgroup(label="Male")
-                option(value="avatar_male_1.png" data-icon="avatar_male_1.png" class="left circle") Male 1
-                option(value="avatar_male_2.png" data-icon="avatar_male_2.png" class="left circle") Male 2
-                option(value="avatar_male_3.png" data-icon="avatar_male_3.png" class="left circle") Male 3
-                option(value="avatar_male_4.png" data-icon="avatar_male_4.png" class="left circle") Male 4
+                option(value="avatar_male_1.png" data-icon="/images/avatar_male_1.png" class="left") Male 1
+                option(value="avatar_male_2.png" data-icon="/images/avatar_male_2.png" class="left") Male 2
+                option(value="avatar_male_3.png" data-icon="/images/avatar_male_3.png" class="left") Male 3
+                option(value="avatar_male_4.png" data-icon="/images/avatar_male_4.png" class="left") Male 4
             label Avatar
 
         div.row
@@ -58,4 +58,5 @@ html
     script
       include ../node_modules/jquery/dist/jquery.min.js
       include ../node_modules/materialize-css/dist/js/materialize.min.js
-      include ../javascript/main.js
+    script(src="/javascript/main.js" type="text/javascript")
+    script(src="/javascript/request.js" type="text/javascript")
