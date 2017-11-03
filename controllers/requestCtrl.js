@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports.getUserRequests = (req, res, next) => {
-  const { User, Request } = req.app.get('models');
+  const { User, Request, Offer } = req.app.get('models');
   User.findOne({
     where: {id:req.params.id},
-    include: [{model: Request}]
+    include: [{model: Request, include: [{model: Offer}]}]
   })
   .then( (user) => {
     res.send(JSON.stringify(user));
