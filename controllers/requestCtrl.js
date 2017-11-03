@@ -12,6 +12,23 @@ module.exports.getAllPokemon = (req, res, next) => {
   });
 };
 
+module.exports.getAllPokemonToOffer = (req, res, next) => {
+  const { Pokedex, Request } = req.app.get('models');
+  Pokedex.findAll()
+  .then( (pokemon) => {
+    Request.findOne({ 
+      where: {id:req.params.id},
+    })
+    .then( (request) => {
+    // res.send(JSON.stringify(pokemon));
+    res.render('offerPokemon', {pokemon, request});
+    })
+    .catch( (err) => {
+      next(err);
+    });
+  })
+};
+
 module.exports.getChosenPokemon = (req, res, next) => {
   const { Ability, Pokedex, Move, Item } = req.app.get('models');
   Pokedex.findOne({
@@ -28,10 +45,6 @@ module.exports.getChosenPokemon = (req, res, next) => {
         next(err);
       })
   })
-};
-
-module.exports.renderOffer = (req, res, next) => {
-    res.render('offer');
 };
 
 module.exports.postRequest = (req, res, next) => {
@@ -58,7 +71,7 @@ module.exports.postRequest = (req, res, next) => {
     comment:req.body.comment
   })
   .then( (data) => {
-   res.status(200).redirect('/welcome');
+   res.status(200).redirect(`/request/new/${data.id}/offer`);
   })
   .catch( (err) => {
      res.status(500).json(err)
@@ -68,7 +81,7 @@ module.exports.postRequest = (req, res, next) => {
 module.exports.postOffer = (req, res, next) => {
   const { Offer } = req.app.get('models');
   Offer.create({
-    requestid:1,
+    requestid:req.body.requestid,
     name:req.body.name,
     ability:req.body.ability,
     nature:req.body.nature,
@@ -84,7 +97,8 @@ module.exports.postOffer = (req, res, next) => {
     defense_iv:req.body.defense_iv,
     sp_att_iv:req.body.sp_att_iv,
     sp_def_iv:req.body.sp_def_iv,
-    speed_iv:req.body.speed_iv
+    speed_iv:req.body.speed_iv,
+    comment:req.body.comment
   })
   .then( (data) => {
    res.status(200).redirect('/welcome');
@@ -95,13 +109,13 @@ module.exports.postOffer = (req, res, next) => {
 };
 
 module.exports.getRequest = (req, res, next) => {
-  const { Request, Offer } = req.app.get('models');
-  Request.findAll({ 
-    where: {userid: req.params.id},
-    include: [{model: Offer}]
+  const { Request } = req.app.get('models');
+  Request.findOne({ 
+    where: {id:req.params.id},
   })
-  .then( (requests) => {
-    res.send(JSON.stringify(requests));
+  .then( (request) => {
+    // res.send(JSON.stringify(request));
+    res.render('offer', {request});
   })
   .catch( (err) => {
     next(err);
@@ -119,4 +133,27 @@ module.exports.getRequests = (req, res, next) => {
   .catch( (err) => {
     next(err);
   });
+};
+
+module.exports.getPokemonAndRequest = (req, res, next) => {
+  const { Ability, Pokedex, Move, Item, Request } = req.app.get('models');
+  Pokedex.findOne({
+    where: {pokemon_id:req.params.pokeid},
+    include: [{model: Ability}, {model: Move}]
+  })
+  .then( (pokemon) => {
+    Item.findAll()
+    .then( (items) => {
+      Request.findOne({ 
+        where: {id:req.params.id},
+      })
+      .then( (request) => {
+      // res.send(JSON.stringify({pokemon}));
+      res.render('offerPokemonForm', {pokemon, items, request});
+      })
+      .catch( (err) => {
+        next(err);
+      })
+    })
+  })
 };

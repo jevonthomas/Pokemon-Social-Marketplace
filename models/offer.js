@@ -17,7 +17,8 @@ module.exports = (sequelize, DataTypes) => {
     defense_iv: DataTypes.INTEGER,
     sp_att_iv: DataTypes.INTEGER,
     sp_def_iv: DataTypes.INTEGER,
-    speed_iv: DataTypes.INTEGER
+    speed_iv: DataTypes.INTEGER,
+    comment: DataTypes.STRING
   }, {timestamps: false});
   
     Offer.associate= (models) => {

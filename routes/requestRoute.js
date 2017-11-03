@@ -3,13 +3,16 @@
 const { Router } = require('express');
 const router = Router();
 
-const { postRequest, getAllPokemon, renderOffer, postOffer, getRequest, getChosenPokemon } = require('../controllers/requestCtrl');
+const { postRequest, getAllPokemon, postOffer, getRequest, getChosenPokemon, getAllPokemonToOffer, getPokemonAndRequest } = require('../controllers/requestCtrl');
 
 router.get('/request/new', getAllPokemon);
 router.get('/request/new/:id', getChosenPokemon);
-router.get('/request/new/:id/offer', renderOffer);
-router.post('/request/offer', postOffer)
+router.get('/request/new/:id/offer', getRequest);
+router.get('/request/new/:id/offer/choose-pokemon', getAllPokemonToOffer);
+router.get('/request/new/:id/offer/choose-pokemon/:pokeid', getPokemonAndRequest);
 router.get('/request/:id', getRequest);
+
 router.post('/request', postRequest);
+router.post('/offer', postOffer);
 
 module.exports = router;

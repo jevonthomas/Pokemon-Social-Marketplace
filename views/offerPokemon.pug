@@ -1,0 +1,8 @@
+extends request.pug
+
+block content
+  .container
+    h5 Which Pokemon Do You Want to Trade for #{request.name}?
+    each pokes in pokemon
+      a(href="choose-pokemon/"+pokes.pokemon_id)
+        img(class="responsive-img" id="avatar" src=`/sprites/pokemon/${pokes.pokemon_id}.png`)
