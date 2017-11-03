@@ -6,6 +6,7 @@ const passport = require('passport')
 var session = require('express-session');
 let bodyParser = require('body-parser');
 const flash = require('express-flash');
+let methodOverride = require('method-override');
 
 require('dotenv').config();
 const port = process.env.PORT || 8080;
@@ -43,6 +44,7 @@ app.use( (req, res, next) => {
 });
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(methodOverride('_method'));
 app.use(flash());
 
 // note that this needs to be after the above stuff
@@ -50,6 +52,7 @@ app.use(routes);
 
 // Add a 404 error handler
 // Add error handler to pipe all server errors to from the routing middleware
+
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
