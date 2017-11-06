@@ -119,4 +119,8 @@ block content
         div(class="input-field col s12")
           textarea(id="textarea1" class="materialize-textarea" name="comment")
           label(for="textarea1") Additional Comments
+      .row
+        div(class="input-field col s12")
+          input(type="number" id="species_id" name="species_id" value=pokemon.species_id)
+          label(for="species_id") #{pokemon.species_id}
       input.btn(type="submit" value="Submit Request")

@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Pokemon Social Marketplace
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css")
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+
+  body
+    include partials/nav.pug
+    .container
+      p Your request was successfully submitted
+
+      a(class="waves-effect waves-light btn" href="/home") Return Home
+
+        
+    script
+      include ../node_modules/jquery/dist/jquery.min.js
+      include ../node_modules/materialize-css/dist/js/materialize.min.js
+      include ../client/client.js

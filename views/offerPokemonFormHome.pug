@@ -1,4 +1,4 @@
-extends request.pug
+extends home.pug
 
 block content
   .container
@@ -119,8 +119,6 @@ block content
         div(class="input-field col s12")
           textarea(id="textarea1" class="materialize-textarea" name="comment")
           label(for="textarea1") Additional Comments
-        div(class="input-field col s12")
-            input(type="number" class="validate" name="requestid" value=request.id)
       .row
         div(class="input-field col s12")
           input(type="number" id="species_id" name="species_id" value=pokemon.species_id)

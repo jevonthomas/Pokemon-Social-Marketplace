@@ -83,7 +83,8 @@ module.exports.postRequest = (req, res, next) => {
     sp_att_iv:req.body.sp_att_iv,
     sp_def_iv:req.body.sp_def_iv,
     speed_iv:req.body.speed_iv,
-    comment:req.body.comment
+    comment:req.body.comment,
+    species_id:req.body.species_id
   })
   .then( (data) => {
    res.status(200).redirect(`/request/new/${data.id}/offer`);
@@ -114,7 +115,8 @@ module.exports.putUserRequest = (req, res, next) => {
     sp_att_iv:req.body.sp_att_iv,
     sp_def_iv:req.body.sp_def_iv,
     speed_iv:req.body.speed_iv,
-    comment:req.body.comment
+    comment:req.body.comment,
+    species_id:req.body.species_id
   }, {where:{id: req.params.id}}).then(function(data){
     res.status(200).redirect(`/request/${req.params.id}`);
   })
@@ -143,7 +145,8 @@ module.exports.postOffer = (req, res, next) => {
     sp_att_iv:req.body.sp_att_iv,
     sp_def_iv:req.body.sp_def_iv,
     speed_iv:req.body.speed_iv,
-    comment:req.body.comment
+    comment:req.body.comment,
+    species_id:req.body.species_id
   })
   .then( (data) => {
    res.status(200).redirect('/welcome');

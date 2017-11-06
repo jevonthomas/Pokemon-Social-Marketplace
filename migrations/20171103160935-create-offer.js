@@ -61,6 +61,9 @@ module.exports = {
       },
       comment: {
         type: Sequelize.STRING
+      },
+      species_id: {
+        type: Sequelize.INTEGER
       }
     });
   },
