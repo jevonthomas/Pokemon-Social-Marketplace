@@ -1,14 +1,29 @@
 'use strict';
 
 module.exports.getUserRequests = (req, res, next) => {
-  const { User, Request, Offer } = req.app.get('models');
+  const { User, Request, Offer, Trade } = req.app.get('models');
   User.findOne({
     where: {id:req.params.id},
-    include: [{model: Request, include: [{model: Offer}]}]
+    include: [{model: Request, include: [{model: Offer}, {model: Trade}]}]
   })
   .then( (user) => {
     // res.send(JSON.stringify(user));
-    res.render('userRequests', {user});
+    res.render('myRequest', {user});
+  })
+  .catch( (err) => {
+    next(err);
+  });
+};
+
+module.exports.getUserRequestDetails = (req, res, next) => {
+  const { User, Request, Offer, Trade } = req.app.get('models');
+  Request.findOne({
+    where: {id:req.params.requestid},
+    include: [{model: Offer}]
+  })
+  .then( (requests) => {
+    // res.send(JSON.stringify(requests));
+    res.render('myRequestDetail', {requests});
   })
   .catch( (err) => {
     next(err);
@@ -66,7 +81,7 @@ module.exports.postRequest = (req, res, next) => {
   console.log(req.body);
   const { Request } = req.app.get('models');
   Request.create({
-    userid:req.params.id,
+    userid:req.params.userid,
     name:req.body.name,
     ability:req.body.ability,
     nature:req.body.nature,
@@ -228,4 +243,20 @@ module.exports.getPokemonAndRequest = (req, res, next) => {
       })
     })
   })
+};
+
+module.exports.getUserRequestTradeOffers = (req, res, next) => {
+  const { Request, User, Trade } = req.app.get('models');
+  Trade.findAll({
+    where: {requestid:req.params.requestid},
+    include: [{model: Trade, include: [{model: User}]}]
+  })
+
+      .then( (request) => {
+      res.send(JSON.stringify({request}));
+      // res.render('offerPokemonForm', {pokemon, items, request});
+      })
+      .catch( (err) => {
+        next(err);
+      })
 };

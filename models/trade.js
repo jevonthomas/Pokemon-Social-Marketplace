@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var Request = sequelize.define('Request', {
+  var Trade = sequelize.define('Trade', {
     userid: DataTypes.INTEGER,
     name: DataTypes.STRING,
     ability: DataTypes.STRING,
@@ -19,20 +19,18 @@ module.exports = (sequelize, DataTypes) => {
     sp_def_iv: DataTypes.INTEGER,
     speed_iv: DataTypes.INTEGER,
     comment: DataTypes.STRING,
-    species_id: DataTypes.INTEGER
+    species_id: DataTypes.INTEGER,
+    request_id: DataTypes.INTEGER
   }, {timestamps: false});
   
-    Request.associate= (models) => {
-      Request.belongsTo(models.User, {
-        foreignKey: 'userid'
-      });
-      Request.hasMany(models.Offer, {
-        foreignKey: 'requestid'
-      })
-      Request.hasOne(models.Trade, {
+    Trade.associate= (models) => {
+      Trade.belongsTo(models.Request, {
         foreignKey: 'request_id'
+      })
+      Trade.belongsTo(models.User, {
+        foreignKey: 'userid'
       })
     };
 
-  return Request;
+  return Trade;
 };

@@ -8,8 +8,14 @@ html
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
 
   body
-    h2 #{user.first_name} #{user.last_name}
-    img(src="/"+user.avatar)
+    p My Account
+    div(class="row valign-wrapper")
+              div(class="col s2")
+                img(src=`/images/${user.avatar}` alt="profile image" class="responsive-img")
+              div(class="col s10") #{user.first_name} #{user.last_name}
+                  ul  
+                    li Email: #{user.email}
+                    li Friend Code: #{user.ds_code}
 
     script
       include ../node_modules/jquery/dist/jquery.min.js

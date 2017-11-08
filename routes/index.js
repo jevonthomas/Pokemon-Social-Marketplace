@@ -12,6 +12,7 @@ router.use(require('./authRoute'));
 router.use(require('./userRoute'));
 router.use(require('./requestRoute'));
 router.use(require('./homeRoute'));
+router.use(require('./inboxRoute'));
 // router.use(require('./foo'));
 
 module.exports = router;

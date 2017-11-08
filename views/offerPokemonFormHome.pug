@@ -3,7 +3,7 @@ extends home.pug
 block content
   .container
     h2 Stats
-    form(name="offer" method="post" action="/offer")
+    form(name="offer" method="post" action=""+session.passport.user.id)
       .row
         div(class="col s12 m6")
           img(class="responsive-img" id="avatar" src=`/sprites/pokemon/${pokemon.pokemon_id}.png` height="200px" width="200px")
