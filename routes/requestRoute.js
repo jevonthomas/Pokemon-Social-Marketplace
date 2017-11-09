@@ -14,11 +14,13 @@ const { postRequest,
         getEditRequest, 
         putUserRequest, 
         getUserRequestDetails, 
-        getUserRequestTradeOffers } = require('../controllers/requestCtrl');
+        getUserRequestTradeOffers,
+        getTradeDetails } = require('../controllers/requestCtrl');
 
 router.get('/request/user/:id', getUserRequests);
 router.get('/request/user/:id/view/:requestid', getUserRequestDetails);
 router.get('/request/user/:id/view/:requestid/trade-offers', getUserRequestTradeOffers);
+router.get('/request/user/:id/view/:requestid/trade-offers/:tradeid/', getTradeDetails);
 router.get('/request/user/edit/:id', getEditRequest);
 router.get('/request/new', getAllPokemon);
 router.get('/request/new/:id/', getChosenPokemon);

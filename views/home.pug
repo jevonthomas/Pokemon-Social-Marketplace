@@ -11,8 +11,8 @@ html
   body
     include partials/nav.pug
     .container
-      .row
-        block content
+      block content
+        .row
           each req in request
             each offer in req.Offers
               div(class="col s12 m6 l6 home-section")

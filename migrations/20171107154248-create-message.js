@@ -14,8 +14,11 @@ module.exports = {
       thread_id: {
         type: Sequelize.INTEGER
       },
-      message: {
+      date: {
         type: Sequelize.STRING
+      },
+      message: {
+        type: Sequelize.TEXT
       }
     });
   },

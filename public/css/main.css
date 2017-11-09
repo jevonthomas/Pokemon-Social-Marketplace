@@ -1,3 +1,8 @@
+.index {
+  height: 100vh;
+  background-image: url("/images/background.jpg");
+}
+
 .container {
   width: 90%;
 }
@@ -31,4 +36,8 @@ nav {
 .indicator {
   color: #7a4899;
   font-weight: bold;
+}
+
+.area {
+  padding: 20px;
 }

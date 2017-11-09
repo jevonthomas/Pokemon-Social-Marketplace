@@ -18,7 +18,7 @@ if session.passport
           li 
             a(href="/request/user/"+session.passport.user.id) My Requests
           li
-            a(href="/inbox/"+session.passport.user.id) Inbox
+            a(href=`/inbox/${session.passport.user.id}/`) Inbox
           li
             a(href="/account/"+session.passport.user.id) My Profile
         ul(class="side-nav" id="mobile-demo")
@@ -29,6 +29,6 @@ if session.passport
           li 
             a(href="/request/user/"+session.passport.user.id) My Requests
           li
-            a(href="/inbox/"+session.passport.user.id) Inbox
+            a(href=`/inbox/${session.passport.user.id}/`) Inbox
           li
             a(href="/account/"+session.passport.user.id) My Profile

@@ -78,7 +78,6 @@ module.exports.getChosenPokemon = (req, res, next) => {
 };
 
 module.exports.postRequest = (req, res, next) => {
-  console.log(req.body);
   const { Request } = req.app.get('models');
   Request.create({
     userid:req.params.userid,
@@ -248,15 +247,29 @@ module.exports.getPokemonAndRequest = (req, res, next) => {
 module.exports.getUserRequestTradeOffers = (req, res, next) => {
   const { Request, User, Trade } = req.app.get('models');
   Trade.findAll({
-    where: {requestid:req.params.requestid},
-    include: [{model: Trade, include: [{model: User}]}]
+    where: {request_id:req.params.requestid},
+    include: [{model: User}, {model: Request}]
   })
+  .then( (trade) => {
+  // res.send(JSON.stringify({trade}));
+  res.render('tradeList', {trade});
+  })
+  .catch( (err) => {
+    next(err);
+  })
+};
 
-      .then( (request) => {
-      res.send(JSON.stringify({request}));
-      // res.render('offerPokemonForm', {pokemon, items, request});
-      })
-      .catch( (err) => {
-        next(err);
-      })
+module.exports.getTradeDetails = (req, res, next) => {
+  const { Request, User, Trade } = req.app.get('models');
+  Trade.findOne({
+    where: {id:req.params.tradeid},
+    include: [{model: User}]
+  })
+  .then( (trade) => {
+  // res.send(JSON.stringify({trade}));
+  res.render('singleTrade', {trade});
+  })
+  .catch( (err) => {
+    next(err);
+  })
 };
