@@ -1,18 +1,14 @@
-if session.passport
-  span #{session.passport.user.username}
-  //- form(method="POST")
-  //-   button(type="submit" formaction="/logout") logout
-
-  nav
-    .container
-      div(class="nav-wrapper")
-        a(href="#!" class="brand-logo")
-          img(src="/images/pokebay.png")
-        a(href="#" data-activates="mobile-demo" class="button-collapse")
-          i(class="material-icons") menu
-        ul(class="right hide-on-med-and-down")
-          li 
-            a(href="/home") Home
+nav
+  .container
+    div(class="nav-wrapper")
+      a(href="#!" class="brand-logo")
+        img(src="/images/pokebay.png")
+      a(href="#" data-activates="mobile-demo" class="button-collapse")
+        i(class="material-icons") menu
+      ul(class="right hide-on-med-and-down")
+        li 
+          a(href="/home") Home
+        if session.passport
           li 
             a(href="/request/new") Post New Request
           li 
@@ -21,9 +17,12 @@ if session.passport
             a(href=`/inbox/${session.passport.user.id}/`) Inbox
           li
             a(href="/account/"+session.passport.user.id) My Profile
-        ul(class="side-nav" id="mobile-demo")
-          li 
-            a(href="/home") Home
+          li
+            a(href="/logout") Logout
+      ul(class="side-nav" id="mobile-demo")
+        li 
+          a(href="/home") Home
+        if session.passport
           li 
             a(href="/request/new") Post New Request
           li 
@@ -32,3 +31,5 @@ if session.passport
             a(href=`/inbox/${session.passport.user.id}/`) Inbox
           li
             a(href="/account/"+session.passport.user.id) My Profile
+          li
+            a(href="/logout") Logout

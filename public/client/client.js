@@ -1,7 +1,4 @@
-document.getElementById("showLogin").addEventListener('click', () => {
-  location.href = `${location.origin}/login`;
-});
-
 document.getElementById("showRegister").addEventListener('click', () => {
+  console.log("click");
   location.href = `${location.origin}/register`;
 });

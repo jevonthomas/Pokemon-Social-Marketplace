@@ -3,7 +3,7 @@ extends request.pug
 block content
   .container
     h2 Stats
-    form(name="offer" method="post" action="/offer")
+    form(name="offer" method="post" action=`/request/new/${request.id}/:pokemonName/offer/choose-pokemon/${pokemon.species_id}`)
       .row
         div(class="col s12 m6")
           img(class="responsive-img" id="avatar" src=`/sprites/pokemon/${pokemon.pokemon_id}.png` height="200px" width="200px")
@@ -119,10 +119,4 @@ block content
         div(class="input-field col s12")
           textarea(id="textarea1" class="materialize-textarea" name="comment")
           label(for="textarea1") Additional Comments
-        div(class="input-field col s12")
-            input(type="number" class="validate" name="requestid" value=request.id)
-      .row
-        div(class="input-field col s12")
-          input(type="number" id="species_id" name="species_id" value=pokemon.species_id)
-          label(for="species_id") #{pokemon.species_id}
       input.btn(type="submit" value="Submit Offer")

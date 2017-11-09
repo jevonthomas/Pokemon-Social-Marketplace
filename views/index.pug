@@ -13,13 +13,24 @@ html
     div.index
       block content
         .container
-          .row
-            img(src="/images/pokebay.png")
-          .row
-              button#showLogin login
+          .index-form
+            .row
+              div(class="col s12")
+                img(class="logo-index" src="/images/pokebay.png")
+                h3(class="white-text center-align") Pokemon Social Marketplace
+            .row
+              div(class="col s12")
+                form(action="/login", method="post")
+                  .input-field
+                    input(class="white-text" type="email" placeholder="email" name="email")
+                  .input-field
+                    input(class="white-text" type="password" placeholder="password" name="password")
+                  .row
+                    div(class="col s12")
+                      button(type="submit") login
               button#showRegister register
         
     script
       include ../node_modules/jquery/dist/jquery.min.js
       include ../node_modules/materialize-css/dist/js/materialize.min.js
-      include ../client/client.js
+    script(src="/client/client.js" type="text/javascript")

@@ -3,14 +3,13 @@ extends request.pug
 block content
   div(class="col s12 m8 offset-m2 l6")
     div
+      div(class="row center-align")
+          h3.indicator #{trade.User.first_name} wants to trade with you!
       div(class="row")
           div(class="col s1 offset-m4")
             img(src=`/images/${trade.User.avatar}` alt=trade.User.avatar class="responsive-img")
           div(class="col s11 m7") 
             span.name #{trade.User.first_name} #{trade.User.last_name}
-            a(class="waves-effect waves-light btn" href=`/accept/${session.passport.user.id}/${trade.User.id}`) Accept
-      div(class="row center-align")
-          p.indicator #{trade.User.first_name} wants to trade with you!
       div(class="col s12 m8 offset-m2 l6")
         div(class="section area")
           div(class="row valign-wrapper")
@@ -47,3 +46,4 @@ block content
             div.center-align
               p.indicator Comment:
               p #{trade.comment}
+      a(class="waves-effect waves-light btn pink-button" href=`/accept/${session.passport.user.id}/${trade.User.id}`) Accept

@@ -3,18 +3,18 @@ extends request.pug
 block content
   body
     .container
-      each request in user.Requests
-        div(class="col s12 m8 offset-m2 l6")
-          div
-            div(class="row valign-wrapper")
-                div(class="col s2")
-                  img(src=`/sprites/pokemon/${request.species_id}.png` alt=request.name class="responsive-img")
-                div(class="col s10") #{request.name}
+      .row
+        each request in user.Requests
+          div(class="col s12 m8 offset-m2 l4")
+            div.border
+              div(class="row valign-wrapper")
+                  div(class="col s3")
+                    span.name #{request.name}
+                    img(src=`/sprites/pokemon/${request.species_id}.png` alt=request.name class="responsive-img")
+                  div(class="col s8") 
                     ul  
                       li Level: #{request.level}
                       li Nature: #{request.nature}
                       li Ability: #{request.ability}
                       li Held Item: #{request.item}
-          a(class="btn" href=`${session.passport.user.id}/view/${request.id}`) View
-          a(class="btn" href="#") Edit
-          a(class="btn" href="#") Delete
+              a(class="btn purple-button" href=`${session.passport.user.id}/view/${request.id}`) View Details

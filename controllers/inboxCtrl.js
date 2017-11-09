@@ -6,7 +6,7 @@ module.exports.getInbox = (req, res, next) => {
   const { Inbox, Thread, Message, User } = req.app.get('models');
   Inbox.findOne({
     where: {user_id:req.params.id},
-    include: [{model: Thread, include: [{model: Message, limit: 1, order: [['date', 'ASC']], include: [{model: User}]}]}]
+    include: [{model: Thread, include: [{model: Message, limit: 10, order: [['date', 'DESC']], include: [{model: User}]}]}]
   })
   .then( (inbox) => {
     // res.send(JSON.stringify({inbox}));
@@ -59,7 +59,7 @@ module.exports.postThread = (req, res, next) => {
             message:trade.comment
           })
           .then( (message) => {
-            console.log("Replace Me!", moment().format('MMMM Do YYYY, h:mm:ss a'));
+            res.status(200).redirect(`/inbox/${req.params.userid1}/${thread.id}/`)
           })
         })
       })
@@ -79,7 +79,7 @@ module.exports.postMessage = (req, res, next) => {
     message:req.body.message
   })
   .then( (message) => {
-    res.redirect(`/inbox/${req.params.userid}/${req.params.threadid}`);
+    res.status(200).redirect(`/inbox/${req.params.userid}/${req.params.threadid}/`);
   })
   .catch( (err) => {
     next(err);

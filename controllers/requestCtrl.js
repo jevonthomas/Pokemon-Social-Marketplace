@@ -81,7 +81,7 @@ module.exports.postRequest = (req, res, next) => {
   const { Request } = req.app.get('models');
   Request.create({
     userid:req.params.userid,
-    name:req.body.name,
+    name:req.params.pokemonName,
     ability:req.body.ability,
     nature:req.body.nature,
     gender:req.body.gender,
@@ -98,10 +98,11 @@ module.exports.postRequest = (req, res, next) => {
     sp_def_iv:req.body.sp_def_iv,
     speed_iv:req.body.speed_iv,
     comment:req.body.comment,
-    species_id:req.body.species_id
+    species_id:req.params.id
   })
   .then( (data) => {
-   res.status(200).redirect(`/request/new/${data.id}/offer`);
+    console.log("data", data);
+   res.status(200).redirect(`/request/new/${data.id}/${data.name}/offer/choose-pokemon/`);
   })
   .catch( (err) => {
      res.status(500).json(err)
@@ -142,7 +143,7 @@ module.exports.putUserRequest = (req, res, next) => {
 module.exports.postOffer = (req, res, next) => {
   const { Offer } = req.app.get('models');
   Offer.create({
-    requestid:req.body.requestid,
+    requestid:req.params.id,
     name:req.body.name,
     ability:req.body.ability,
     nature:req.body.nature,
@@ -160,10 +161,10 @@ module.exports.postOffer = (req, res, next) => {
     sp_def_iv:req.body.sp_def_iv,
     speed_iv:req.body.speed_iv,
     comment:req.body.comment,
-    species_id:req.body.species_id
+    species_id:req.params.pokeid
   })
   .then( (data) => {
-   res.status(200).redirect('/welcome');
+   res.render('successScreen');
   })
   .catch( (err) => {
      res.status(500).json(err)
