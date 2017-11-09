@@ -1,0 +1,13 @@
+extends home.pug
+
+block content
+  h5 Which Pokemon Do You Want?
+  div(class="row")
+  form(class="col s12" name="offer" method="post" action=``)
+    div(class="row")
+      div(class="input-field col s6")
+        input(placeholder="Search" id="search" type="text" class="validate" name="search")
+    input.btn(type="submit" value="Search")
+  each pokes in pokemon
+    a(href=`trade-offer/${pokes.pokemon_id}/`)
+      img(class="responsive-img" id="avatar" src=`/sprites/pokemon/${pokes.pokemon_id}.png` alt=pokes.identifier)

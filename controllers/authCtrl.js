@@ -6,6 +6,8 @@ module.exports.displayRegister = (req, res) => {
   res.render('register');
 };
 
+
+
 module.exports.register = (req, res, next) => {
   if (req.body.password === req.body.confirmation) {
     console.log("lets see", req.body);
@@ -22,6 +24,18 @@ module.exports.register = (req, res, next) => {
         console.log("authenticated. Rerouting to welcome page!" );
         // Save a msg in a cookie whose value will be added to req
         // using https://www.npmjs.com/package/express-flash-2 docs, but installed express-flash
+        //creating user's inbox
+          const { Inbox } = req.app.get('models');
+          console.log("inbox", Inbox);
+          Inbox.create({
+            user_id:user.id
+          })
+          .then( (data) => {
+          res.status(200)
+          })
+          .catch( (err) => {
+            res.status(500).json(err)
+          });
         req.flash('registerMsg', `Thanks for signing up, ${user.first_name}!`);
         res.redirect('/welcome');
       });
@@ -51,7 +65,7 @@ module.exports.login = (req, res, next) => {
       if (err) { return next(err) }
       console.log("authenticated. Rerouting to welcome!", user);
       req.flash('welcomeBackMsg',`Welcome back, `);
-      res.redirect('/welcome');
+      res.redirect('/home');
     });
   })(req, res, next);
 };

@@ -1,32 +1,24 @@
 doctype html
 html
   head
-    title My Requests
+    title Pokemon Social Marketplace
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css")
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+    link(href="/css/main.css", rel="stylesheet")
 
   body
+    include partials/nav.pug
     .container
-      each request in user.Requests
-        div(class="col s4")
-          h2(class="header") #{request.name}
-          a(href="#")
-            div(class="card horizontal")
-              div(class="card-image")
-                img(src="https://lorempixel.com/100/190/nature/6")
-              div(class="card-stacked")
-                div(class="card-content")
-                  p I am a very simple card. I am good at containing small bits of information.
-                div(class="card-action")
-                  each offer in request.Offers
-                    a(href="#") #{offer.name}
+      p Your request was successfully submitted
 
+      a(class="waves-effect waves-light btn" href="/home") Return Home
 
+        
     script
       include ../node_modules/jquery/dist/jquery.min.js
       include ../node_modules/materialize-css/dist/js/materialize.min.js
-      include ../node_modules/materialize-css/extras/nouislider/nouislider.min.js
+      include ../client/client.js
     script(src="/javascript/main.js" type="text/javascript")
     script(src="/javascript/request.js" type="text/javascript")

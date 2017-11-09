@@ -1,7 +1,7 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var Offer = sequelize.define('Offer', {
-    requestid: DataTypes.INTEGER,
+  var Trade = sequelize.define('Trade', {
+    userid: DataTypes.INTEGER,
     name: DataTypes.STRING,
     ability: DataTypes.STRING,
     nature: DataTypes.STRING,
@@ -19,14 +19,18 @@ module.exports = (sequelize, DataTypes) => {
     sp_def_iv: DataTypes.INTEGER,
     speed_iv: DataTypes.INTEGER,
     comment: DataTypes.STRING,
-    species_id: DataTypes.INTEGER
+    species_id: DataTypes.INTEGER,
+    request_id: DataTypes.INTEGER
   }, {timestamps: false});
   
-    Offer.associate= (models) => {
-      Offer.belongsTo(models.Request, {
-        foreignKey: 'requestid'
+    Trade.associate= (models) => {
+      Trade.belongsTo(models.Request, {
+        foreignKey: 'request_id'
+      })
+      Trade.belongsTo(models.User, {
+        foreignKey: 'userid'
       })
     };
 
-  return Offer;
+  return Trade;
 };

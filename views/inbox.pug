@@ -12,11 +12,21 @@ html
     include partials/nav.pug
     .container
       block content
-
-
+        .row
+          each obj in inbox.Threads
+            a(href=`${obj.id}/`)
+              div(class="col s12")
+                div(class="card-panel grey lighten-5 z-depth-1")
+                  div(class="row valign-wrapper")
+                    div(class="col s1")
+                      span.name #{obj.Messages[0].User.first_name}
+                      img(src=`/images/${obj.Messages[0].User.avatar}` alt="" class="responsive-img")
+                    div(class="col s11")
+                      p #{obj.Messages[0].message}
+        
     script
       include ../node_modules/jquery/dist/jquery.min.js
       include ../node_modules/materialize-css/dist/js/materialize.min.js
-      include ../node_modules/materialize-css/extras/nouislider/nouislider.min.js
+      include ../client/client.js
     script(src="/javascript/main.js" type="text/javascript")
     script(src="/javascript/request.js" type="text/javascript")

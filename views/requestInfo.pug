@@ -1,0 +1,82 @@
+extends home.pug
+
+block content
+  div(class="col s12 m8 offset-m2 l6")
+    div
+      div(class="row left-align")
+          div(class="col s2")
+            img(src=`/images/${user.avatar}` alt=user.avatar class="responsive-img")
+          div(class="col s10") 
+            p #{user.first_name} #{user.last_name}
+            a(class="waves-effect waves-light btn" href=`${request.id}/trade-offer`) Make Offer
+            a(class="waves-effect waves-light btn") Back
+    each offer in request.Offers
+      div(class="col s12 m8 offset-m2 l6")
+        div(class="section area")
+          div(class="row valign-wrapper")
+            div(class="col s3 l2 offset-l5")
+              span(class="name") #{offer.name}
+              img(src=`/sprites/pokemon/${offer.species_id}.png` alt=offer.name class="responsive-img")
+            div(class="col s9 l10")
+                ul  
+                  li Level: #{offer.level}
+                  li Nature: #{offer.nature}
+                  li Ability: #{offer.ability}
+                  li Held Item: #{offer.item}
+          div(class="row center-align")
+            div(class="col s4") 
+              span(class="indicator") Moves
+              .row
+                    ul(class="col s12")
+                      li Move 1: #{offer.move_1}
+                      li Move 2: #{offer.move_2}
+                      li Move 3: #{offer.move_3}
+                      li Move 4: #{offer.move_4}
+            div(class="col s6") 
+              span(class="indicator") IV Spread
+              .row
+                    ul(class="col s6")  
+                      li HP: #{offer.hp_iv}
+                      li Attack: #{offer.attack_iv}
+                      li Defense: #{offer.defense_iv}
+                      li Sp. Attack: #{offer.sp_att_iv}
+                    ul(class="col s6")
+                      li Sp. Defense: #{offer.sp_def_iv}
+                      li Speed: #{offer.speed_iv}
+        .divider
+        div
+          div(class="row")
+              p(class="center-align") Looking For:
+          div(class="row valign-wrapper right-align")
+            div(class="col s10")
+              span(class="black-text") #{request.name}
+                ul  
+                  li Level: #{request.level}
+                  li Nature: #{request.nature}
+                  li Ability: #{request.ability}
+                  li Held Item: #{request.item}
+            div(class="col s2")
+              img(src=`/sprites/pokemon/${request.species_id}.png` alt=request.name class="responsive-img")
+          div(class="row")
+            div(class="col s4") Moves
+              .row
+                    ul(class="col s12")
+                      li Move 1: #{request.move_1}
+                      li Move 2: #{request.move_2}
+                      li Move 3: #{request.move_3}
+                      li Move 4: #{request.move_4}
+            div(class="col s6") IV Spread
+              .row
+                    ul(class="col s6")  
+                      li HP: #{request.hp_iv}
+                      li Attack: #{request.attack_iv}
+                      li Defense: #{request.defense_iv}
+                      li Sp. Attack: #{request.sp_att_iv}
+                    ul(class="col s6")
+                      li Sp. Defense: #{request.sp_def_iv}
+                      li Speed: #{request.speed_iv}
+          .divider
+          div(class="row valign-wrapper")
+            p Additional Comments:
+            p #{offer.comment}
+        p(class="center-align")

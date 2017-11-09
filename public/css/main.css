@@ -1,0 +1,83 @@
+.index {
+  height: 100vh;
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+.full-screen {
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+}
+
+.logo-index {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+.index-form {
+  padding-top: 10%;
+}
+
+.row, .col {
+  margin: 0;
+}
+
+nav {
+  background-color: #7a4899;
+}
+
+.brand-logo img {
+  padding-top: 10px;
+}
+
+.home-section {
+  border: 0.5px solid rgba(163, 163, 163, 0.315);
+}
+
+.name {
+  text-transform: uppercase;
+  color: #e880e4;
+  font-weight: bolder;
+}
+
+.border {
+  border: 1px solid #b0a7b0;
+}
+
+.indicator {
+  color: #7a4899;
+  font-weight: bold;
+}
+
+.area {
+  padding: 20px;
+}
+
+.pink-button {
+  background-color: #e880e4;
+}
+
+.pink-button:active {
+  background-color: #e880e4;
+}
+
+.pink-button:hover {
+  background-color: #e708e0;
+}
+
+.purple-button {
+  background-color: #7a4899;
+}
+.purple-button:active {
+  background-color: #7a4899;
+}
+
+.purple-button:hover {
+  background-color: #5c0195;
+}

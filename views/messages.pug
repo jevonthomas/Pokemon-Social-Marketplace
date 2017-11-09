@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    title Pokemon Social Marketplace
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css")
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+    link(href="/css/main.css", rel="stylesheet")
+
+  body
+    include partials/nav.pug
+    .container
+      block content
+        .row
+          form(class="col s12 fixed" method="POST" action=session.passport.user.id)
+            div(class="row")
+              div(class="input-field col s6")
+                input(id="icon_prefix" type="text" class="validate" name="message")
+                button(class="btn waves-effect waves-light pink-button" type="submit") Submit
+                  i(class="material-icons right") send
+        each obj in thread.Messages
+          .row
+              div(class="col s12")
+                div(class="card-panel grey lighten-5 z-depth-1")
+                  div(class="row valign-wrapper")
+                    div(class="col s1")
+                      span.name #{obj.User.first_name}
+                      img(src=`/images/${obj.User.avatar}` alt="" class="responsive-img")
+                    div(class="col s11")
+                      p #{obj.message}
+                      p #{obj.date}
+        
+    script
+      include ../node_modules/jquery/dist/jquery.min.js
+      include ../node_modules/materialize-css/dist/js/materialize.min.js
+      include ../client/client.js
+    script(src="/javascript/main.js" type="text/javascript")
+    script(src="/javascript/request.js" type="text/javascript")

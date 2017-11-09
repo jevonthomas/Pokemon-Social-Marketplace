@@ -1,0 +1,21 @@
+extends request.pug
+
+block content
+    each obj in trade
+      .row
+        div(class="col s12 m2 offset-m2")
+          p.name #{obj.User.first_name} #{obj.User.last_name}
+          img(src=`/images/${obj.User.avatar}` alt=obj.User.avatar class="responsive-img")
+        div(class="col s12 m8") 
+          div(class="col s3")
+            p(class="name") #{obj.name}
+            img(src=`/sprites/pokemon/${obj.species_id}.png` alt=obj.name class="responsive-img")
+          div(class="col s9")
+              ul  
+                li Level: #{obj.level}
+                li Nature: #{obj.nature}
+                li Ability: #{obj.ability}
+                li Held Item: #{obj.item}
+              a(class="waves-effect waves-light btn pink-button" href=`/request/user/${obj.User.id}/view/${obj.Request.id}/trade-offers/${obj.id}/`) View Details
+      .row
+        .divider

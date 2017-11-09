@@ -1,14 +1,29 @@
 'use strict';
 
 module.exports.getUserRequests = (req, res, next) => {
-  const { User, Request, Offer } = req.app.get('models');
+  const { User, Request, Offer, Trade } = req.app.get('models');
   User.findOne({
     where: {id:req.params.id},
-    include: [{model: Request, include: [{model: Offer}]}]
+    include: [{model: Request, include: [{model: Offer}, {model: Trade}]}]
   })
   .then( (user) => {
     // res.send(JSON.stringify(user));
-    res.render('userRequests', {user});
+    res.render('myRequest', {user});
+  })
+  .catch( (err) => {
+    next(err);
+  });
+};
+
+module.exports.getUserRequestDetails = (req, res, next) => {
+  const { User, Request, Offer, Trade } = req.app.get('models');
+  Request.findOne({
+    where: {id:req.params.requestid},
+    include: [{model: Offer}]
+  })
+  .then( (requests) => {
+    // res.send(JSON.stringify(requests));
+    res.render('myRequestDetail', {requests});
   })
   .catch( (err) => {
     next(err);
@@ -63,11 +78,10 @@ module.exports.getChosenPokemon = (req, res, next) => {
 };
 
 module.exports.postRequest = (req, res, next) => {
-  console.log(req.body);
   const { Request } = req.app.get('models');
   Request.create({
-    userid:req.params.id,
-    name:req.body.name,
+    userid:req.params.userid,
+    name:req.params.pokemonName,
     ability:req.body.ability,
     nature:req.body.nature,
     gender:req.body.gender,
@@ -83,10 +97,12 @@ module.exports.postRequest = (req, res, next) => {
     sp_att_iv:req.body.sp_att_iv,
     sp_def_iv:req.body.sp_def_iv,
     speed_iv:req.body.speed_iv,
-    comment:req.body.comment
+    comment:req.body.comment,
+    species_id:req.params.id
   })
   .then( (data) => {
-   res.status(200).redirect(`/request/new/${data.id}/offer`);
+    console.log("data", data);
+   res.status(200).redirect(`/request/new/${data.id}/${data.name}/offer/choose-pokemon/`);
   })
   .catch( (err) => {
      res.status(500).json(err)
@@ -114,7 +130,8 @@ module.exports.putUserRequest = (req, res, next) => {
     sp_att_iv:req.body.sp_att_iv,
     sp_def_iv:req.body.sp_def_iv,
     speed_iv:req.body.speed_iv,
-    comment:req.body.comment
+    comment:req.body.comment,
+    species_id:req.body.species_id
   }, {where:{id: req.params.id}}).then(function(data){
     res.status(200).redirect(`/request/${req.params.id}`);
   })
@@ -126,7 +143,7 @@ module.exports.putUserRequest = (req, res, next) => {
 module.exports.postOffer = (req, res, next) => {
   const { Offer } = req.app.get('models');
   Offer.create({
-    requestid:req.body.requestid,
+    requestid:req.params.id,
     name:req.body.name,
     ability:req.body.ability,
     nature:req.body.nature,
@@ -143,10 +160,11 @@ module.exports.postOffer = (req, res, next) => {
     sp_att_iv:req.body.sp_att_iv,
     sp_def_iv:req.body.sp_def_iv,
     speed_iv:req.body.speed_iv,
-    comment:req.body.comment
+    comment:req.body.comment,
+    species_id:req.params.pokeid
   })
   .then( (data) => {
-   res.status(200).redirect('/welcome');
+   res.render('successScreen');
   })
   .catch( (err) => {
      res.status(500).json(err)
@@ -224,5 +242,35 @@ module.exports.getPokemonAndRequest = (req, res, next) => {
         next(err);
       })
     })
+  })
+};
+
+module.exports.getUserRequestTradeOffers = (req, res, next) => {
+  const { Request, User, Trade } = req.app.get('models');
+  Trade.findAll({
+    where: {request_id:req.params.requestid},
+    include: [{model: User}, {model: Request}]
+  })
+  .then( (trade) => {
+  // res.send(JSON.stringify({trade}));
+  res.render('tradeList', {trade});
+  })
+  .catch( (err) => {
+    next(err);
+  })
+};
+
+module.exports.getTradeDetails = (req, res, next) => {
+  const { Request, User, Trade } = req.app.get('models');
+  Trade.findOne({
+    where: {id:req.params.tradeid},
+    include: [{model: User}]
+  })
+  .then( (trade) => {
+  // res.send(JSON.stringify({trade}));
+  res.render('singleTrade', {trade});
+  })
+  .catch( (err) => {
+    next(err);
   })
 };

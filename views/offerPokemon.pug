@@ -2,7 +2,9 @@ extends request.pug
 
 block content
   .container
-    h5 Which Pokemon Do You Want to Trade for #{request.name}?
+    h5 Which Pokemon Do You Want to Trade for 
+      span.name #{request.name}
+      span ?
     each pokes in pokemon
-      a(href="choose-pokemon/"+pokes.pokemon_id)
+      a(href=pokes.pokemon_id)
         img(class="responsive-img" id="avatar" src=`/sprites/pokemon/${pokes.pokemon_id}.png`)
