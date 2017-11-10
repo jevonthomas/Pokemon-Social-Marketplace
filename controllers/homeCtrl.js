@@ -74,7 +74,11 @@ module.exports.renderSuccess = (req, res, next) => {
 module.exports.getSearchedPokemon = (req, res, next) => {
   const { Pokedex } = req.app.get('models');
   Pokedex.findAll({
-    where: {identifier:req.body.search}
+    where: {
+      identifier: {
+        $like: '%' + req.body.search + '%'
+      }
+    }
   })
   .then( (pokemon) => {
     // res.send(JSON.stringify(pokemon));
@@ -90,7 +94,7 @@ module.exports.postTrade = (req, res, next) => {
   const { Trade } = req.app.get('models');
   Trade.create({
     userid:req.params.userid,
-    name:req.body.name,
+    name:req.params.pokename,
     ability:req.body.ability,
     nature:req.body.nature,
     gender:req.body.gender,
@@ -107,7 +111,7 @@ module.exports.postTrade = (req, res, next) => {
     sp_def_iv:req.body.sp_def_iv,
     speed_iv:req.body.speed_iv,
     comment:req.body.comment,
-    species_id:req.body.species_id,
+    species_id:req.params.pokemonid,
     request_id:req.params.requestid
   })
   .then( (data) => {

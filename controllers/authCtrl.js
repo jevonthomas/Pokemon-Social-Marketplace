@@ -58,13 +58,11 @@ module.exports.login = (req, res, next) => {
 
     if (err) {  console.log(err) } //or return next(err) once handler set up in app.js
     if (!user) {
-      return res.render('login', msgObj)
+      return res.render('index', msgObj)
     }
 
     req.logIn(user, err => {
       if (err) { return next(err) }
-      console.log("authenticated. Rerouting to welcome!", user);
-      req.flash('welcomeBackMsg',`Welcome back, `);
       res.redirect('/home');
     });
   })(req, res, next);

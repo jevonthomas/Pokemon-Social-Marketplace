@@ -1,7 +1,7 @@
 nav
   .container
     div(class="nav-wrapper")
-      a(href="#!" class="brand-logo")
+      a(href="/home" class="brand-logo")
         img(src="/images/pokebay.png")
       a(href="#" data-activates="mobile-demo" class="button-collapse")
         i(class="material-icons") menu
@@ -19,6 +19,9 @@ nav
             a(href="/account/"+session.passport.user.id) My Profile
           li
             a(href="/logout") Logout
+        else
+          li
+            a(href="/") Login/Register
       ul(class="side-nav" id="mobile-demo")
         li 
           a(href="/home") Home
@@ -33,3 +36,6 @@ nav
             a(href="/account/"+session.passport.user.id) My Profile
           li
             a(href="/logout") Logout
+        else
+          li
+            a(href="/") Login/Register

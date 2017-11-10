@@ -144,7 +144,7 @@ module.exports.postOffer = (req, res, next) => {
   const { Offer } = req.app.get('models');
   Offer.create({
     requestid:req.params.id,
-    name:req.body.name,
+    name:req.params.pokename,
     ability:req.body.ability,
     nature:req.body.nature,
     gender:req.body.gender,
@@ -273,4 +273,40 @@ module.exports.getTradeDetails = (req, res, next) => {
   .catch( (err) => {
     next(err);
   })
+};
+
+module.exports.getSearchedPokemon = (req, res, next) => {
+  const { Pokedex } = req.app.get('models');
+  Pokedex.findAll({
+    where: {
+      identifier: {
+        $like: '%' + req.body.search + '%'
+      }
+    }
+  })
+  .then( (pokemon) => {
+    // res.send(JSON.stringify(pokemon));
+    res.render('choosePokemon', {pokemon});
+  })
+  .catch( (err) => {
+    next(err);
+  });
+};
+
+module.exports.getSearchedOfferPokemon = (req, res, next) => {
+  const { Pokedex } = req.app.get('models');
+  Pokedex.findAll({
+    where: {
+      identifier: {
+        $like: '%' + req.body.search + '%'
+      }
+    }
+  })
+  .then( (pokemon) => {
+    // res.send(JSON.stringify(pokemon));
+    res.render('offerPokemon', {pokemon});
+  })
+  .catch( (err) => {
+    next(err);
+  });
 };
