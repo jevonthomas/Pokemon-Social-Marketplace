@@ -2,13 +2,11 @@ extends home.pug
 
 block content
   .container
-    h2 Stats
-    form(name="offer" method="post" action=""+session.passport.user.id)
+    h3.name #{pokemon.identifier}
+    form(name="offer" method="post" action=`${session.passport.user.id}/${pokemon.identifier}`)
       .row
         div(class="col s12 m6")
           img(class="responsive-img" id="avatar" src=`/sprites/pokemon/${pokemon.pokemon_id}.png` height="200px" width="200px")
-          div(class="input-field")
-            input(type="text" class="validate" name="name" value=pokemon.identifier placeholder=pokemon.identifier)
 
         div(class="col s12 m6")
           h5 Attributes
@@ -119,8 +117,4 @@ block content
         div(class="input-field col s12")
           textarea(id="textarea1" class="materialize-textarea" name="comment")
           label(for="textarea1") Additional Comments
-      .row
-        div(class="input-field col s12")
-          input(type="number" id="species_id" name="species_id" value=pokemon.species_id)
-          label(for="species_id") #{pokemon.species_id}
       input.btn(type="submit" value="Submit Offer")

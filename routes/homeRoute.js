@@ -12,6 +12,6 @@ router.get('/home/:id/trade-offer/:pokemonid/', getPokemon);
 router.get('/success-page', renderSuccess);
 
 router.post('/home/:id/trade-offer', getSearchedPokemon);
-router.post('/home/:requestid/trade-offer/:pokemonid/:userid', postTrade);
+router.post('/home/:requestid/trade-offer/:pokemonid/:userid/:pokename', postTrade);
 
 module.exports = router;
