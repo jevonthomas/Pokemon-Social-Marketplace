@@ -35,24 +35,23 @@ Players can only communicate with users whose trade request they accepted.
 ## <p style="color: green;">How to Install?</p>
 
 - Clone the project to the desired folder in your directory,
-```git clone https://github.com/Arwask/Schedule-app```
-- cd into the folder ```cd Schedule-app```
+```git clone https://github.com/jevonthomas/pokemon-social-marketplace```
+- cd into the folder ```cd pokemon-social-marketplace```
 - run ```npm install``` at the root folder
 
 ## <p style="color: green;">How to get started?</p>
 
 Create a Database named 'Pokebay'
 - Once you have postgreSQL setup, type ```psql``` in your terminal
-- Then, create a new database ```CREATE DATABASE 'Schedule-App';```
-- And, connect to the Database ```\c 'Schedule-App'```
+- Then, create a new database ```CREATE DATABASE 'Pokebay';```
+- And, connect to the Database ```\c 'Pokebay'```
 
 Once you are inside the project folder.
 - Install all dependencies. Run ```npm install` at the root folder.
-- Move Popper, jquery and popper into static/lib/ folder
 - Next, go to config folder ``` cd config```
 - Make a new file ```touch config.json ```
 - Copy the contents from config.example.json and paste it into your config.json and change the username and password fields to your credentials.
-- Create the tables and seed them with some starter data using ```npm run dbrb```
+- Create the tables and seed them with some starter data using ```sequelize db:migrate``` then ```sequelize db:seed:all```
 - Start the project using ```npm start```
 
 ## <p style="color: green;">Developer</p>
