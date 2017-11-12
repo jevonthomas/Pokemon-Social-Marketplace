@@ -37,7 +37,7 @@ module.exports.register = (req, res, next) => {
             res.status(500).json(err)
           });
         req.flash('registerMsg', `Thanks for signing up, ${user.first_name}!`);
-        res.redirect('/welcome');
+        res.redirect('/home');
       });
     })(req, res, next);
   } else {
