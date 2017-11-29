@@ -12,6 +12,24 @@ module.exports.getAllRequestsAndOffers = (req, res, next) => {
   });
 };
 
+module.exports.getSearchedRequest = (req, res, next) => {
+  const { Request, Offer } = req.app.get('models');
+  Request.findAll({
+    include: [{model: Offer, where: {
+      name: {
+        $like: '%' + req.body.search + '%'
+      }
+    }}]
+  })
+  .then( (request) => {
+    // res.send(JSON.stringify(request));
+    res.render('home', {request});
+  })
+  .catch( (err) => {
+    next(err);
+  });
+};
+
 module.exports.getRequestDetails = (req, res, next) => {
   const { Request, Offer, User } = req.app.get('models');
   Request.findOne({
