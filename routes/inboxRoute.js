@@ -3,7 +3,10 @@
 const { Router } = require('express');
 const router = Router();
 
-const { getInbox, postThread, getThread, postMessage } = require('../controllers/inboxCtrl');
+const { getInbox, 
+        postThread, 
+        getThread, 
+        postMessage } = require('../controllers/inboxCtrl');
 
 router.get('/inbox/:id/', getInbox);
 router.get('/inbox/:id/:threadid/', getThread);
