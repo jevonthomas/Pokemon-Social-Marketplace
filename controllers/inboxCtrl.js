@@ -6,7 +6,7 @@ module.exports.getInbox = (req, res, next) => {
   const { Inbox, Thread, Message, User } = req.app.get('models');
   Inbox.findOne({
     where: {user_id:req.params.id},
-    include: [{model: Thread, include: [{model: Message, limit: 10, order: [['date', 'DESC']], include: [{model: User}]}]}]
+    include: [{model: Thread, include: [{model: Message, limit: 9999, order: [['date', 'DESC']], include: [{model: User}]}]}]
   })
   .then( (inbox) => {
     // res.send(JSON.stringify({inbox}));
@@ -71,7 +71,7 @@ module.exports.postThread = (req, res, next) => {
 };
 
 module.exports.postMessage = (req, res, next) => {
-  const { Message } = req.app.get('models');
+  const { Message, inboxThread } = req.app.get('models');
   Message.create({
     user_id:req.params.userid,
     thread_id:req.params.threadid,
@@ -79,9 +79,15 @@ module.exports.postMessage = (req, res, next) => {
     message:req.body.message
   })
   .then( (message) => {
-    res.status(200).redirect(`/inbox/${req.params.userid}/${req.params.threadid}/`);
+    inboxThread.update(
+      {random: 1},
+      {where: {thread_id:req.params.threadid}
+    })
+    .then( (inboxThread) => {
+      res.status(200).redirect(`/inbox/${req.params.userid}/${req.params.threadid}/`);
   })
   .catch( (err) => {
     next(err);
   });
+})
 };

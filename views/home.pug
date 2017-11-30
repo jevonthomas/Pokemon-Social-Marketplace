@@ -10,52 +10,56 @@ html
 
   body
     include partials/nav.pug
-    .container
-      block content
-        div(class="row")
-          form(class="col s12" name="offer" method="post" action=`/home`)
-            div(class="row")
-              div(class="input-field col s10 m6")
-                input(placeholder="What Pokemon are you looking for?" id="search" type="text" class="validate" name="search")
-              input.btn(type="submit" value="Search" class="pink-button")
-        .row
-          if request[0]
-            each req in request
-              each offer in req.Offers
-                a(href="/home/"+req.id)
-                  div(class="col s12 l6 home-section")
-                    div(class="row")
-                      p(class="center-align indicator") Trading:
-                    div(class="row valign-wrapper")
-                        div(class="col s3")
-                          span(class="name") #{offer.name}
-                          img(src=`/sprites/pokemon/${offer.species_id}.png` alt=offer.name class="responsive-img")
-                        div(class="col s9") 
+    main
+      .container
+        block content
+          div(class="row")
+            form(class="col s12" name="offer" method="post" action=`/home`)
+              div(class="row")
+                div(class="input-field col s10 m6")
+                  input(placeholder="What Pokemon are you looking for?" id="search" type="text" class="validate" name="search")
+                input.btn(type="submit" value="Search" class="pink-button")
+          .row
+            if request[0]
+              each req in request
+                each offer in req.Offers
+                  a(href="/home/"+req.id)
+                    div(class="col s12 l6 home-section")
+                      div(class="row")
+                        p(class="center-align indicator") Trading:
+                      div(class="row valign-wrapper")
+                          div(class="col s3")
+                            span(class="name") #{offer.name}
+                            img(src=`/sprites/pokemon/${offer.species_id}.png` alt=offer.name class="responsive-img")
+                          div(class="col s9") 
+                              ul  
+                                li Level: #{offer.level}
+                                li Nature: #{offer.nature}
+                                li Ability: #{offer.ability}
+                                li Held Item: #{offer.item}
+                      div(class="row")
+                          p(class="center-align indicator") Looking For:
+                      div(class="row valign-wrapper right-align")
+                        div(class="col s9")
                             ul  
-                              li Level: #{offer.level}
-                              li Nature: #{offer.nature}
-                              li Ability: #{offer.ability}
-                              li Held Item: #{offer.item}
-                    div(class="row")
-                        p(class="center-align indicator") Looking For:
-                    div(class="row valign-wrapper right-align")
-                      div(class="col s9")
-                          ul  
-                            li Level: #{req.level}
-                            li Nature: #{req.nature}
-                            li Ability: #{req.ability}
-                            li Held Item: #{req.item}
-                      div(class="col s3")
-                        span(class="name") #{req.name}
-                        img(src=`/sprites/pokemon/${req.species_id}.png` alt=req.name class="responsive-img")
-                    p(class="center-align") 
-                      a(href="/home/"+req.id) Click Here For More Info
-                    .divider
-          else
-            p
-              |Search returned 0 results. Try requesting the Pokemon you are looking for by clicking the request button in the navigation bar.
-            p
-              |Must be logged in to add a request to this site. 
+                              li Level: #{req.level}
+                              li Nature: #{req.nature}
+                              li Ability: #{req.ability}
+                              li Held Item: #{req.item}
+                        div(class="col s3")
+                          span(class="name") #{req.name}
+                          img(src=`/sprites/pokemon/${req.species_id}.png` alt=req.name class="responsive-img")
+                      p(class="center-align") 
+                        a(href="/home/"+req.id) Click Here For More Info
+                      .divider
+            else
+              p
+                |0 results at this time. Try requesting the Pokemon you are looking for by clicking the request button in the navigation bar.
+              p
+                |Must be logged in to add a request to this site. 
+
+    include partials/footer.pug
+
     script
       include ../node_modules/jquery/dist/jquery.min.js
       include ../node_modules/materialize-css/dist/js/materialize.min.js

@@ -133,7 +133,7 @@ module.exports.postTrade = (req, res, next) => {
     request_id:req.params.requestid
   })
   .then( (data) => {
-   res.status(200).redirect(`/home`);
+   res.status(200).render(`successScreen`);
   })
   .catch( (err) => {
      res.status(500).json(err)

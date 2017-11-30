@@ -14,6 +14,9 @@ module.exports = {
       thread_id: {
         type: Sequelize.INTEGER
       },
+      random: {
+        type: Sequelize.INTEGER
+      },
       createdAt: {
         allowNull: true,
         type: Sequelize.DATE

@@ -4,17 +4,21 @@ block content
   body
     .container
       .row
-        each request in user.Requests
-          div(class="col s12 m8 offset-m2 l4")
-            div.border
-              div(class="row valign-wrapper")
-                  div(class="col s3")
-                    span.name #{request.name}
-                    img(src=`/sprites/pokemon/${request.species_id}.png` alt=request.name class="responsive-img")
-                  div(class="col s8") 
-                    ul  
-                      li Level: #{request.level}
-                      li Nature: #{request.nature}
-                      li Ability: #{request.ability}
-                      li Held Item: #{request.item}
-              a(class="btn purple-button" href=`${session.passport.user.id}/view/${request.id}`) View Details
+        if user.Request
+          each request in user.Requests
+            div(class="col s12 m8 offset-m2 l4")
+              div.border
+                div(class="row valign-wrapper")
+                    div(class="col s3")
+                      span.name #{request.name}
+                      img(src=`/sprites/pokemon/${request.species_id}.png` alt=request.name class="responsive-img")
+                    div(class="col s8") 
+                      ul  
+                        li Level: #{request.level}
+                        li Nature: #{request.nature}
+                        li Ability: #{request.ability}
+                        li Held Item: #{request.item}
+                a(class="btn purple-button" href=`${session.passport.user.id}/view/${request.id}`) View Details
+        else
+          p
+            |You currently have no requests. Click "Post New Request" in the navigation bar to request the Pokemon you are searching for.
