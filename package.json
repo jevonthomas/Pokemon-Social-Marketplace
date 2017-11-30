@@ -30,6 +30,6 @@
     "sequelize-cli": "^3.0.0"
   },
   "engines": {
-    "node": "8.9.1"
+    "node": "9.2.0"
   }
 }
