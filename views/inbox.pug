@@ -13,17 +13,23 @@ html
     .container
       block content
         .row
-          each obj in inbox.Threads
-            a(href=`${obj.id}/`)
-              div(class="col s12")
-                div(class="card-panel grey lighten-5 z-depth-1")
-                  div(class="row valign-wrapper")
-                    div(class="col s1")
-                      span.name #{obj.Messages[0].User.first_name}
-                      img(src=`/images/${obj.Messages[0].User.avatar}` alt="" class="responsive-img")
-                    div(class="col s11")
-                      p #{obj.Messages[0].message}
-                      p #{obj.Messages[0].date}
+          if inbox.Threads.id
+            each obj in inbox.Threads
+              a(href=`${obj.id}/`)
+                div(class="col s12")
+                  div(class="card-panel grey lighten-5 z-depth-1")
+                    div(class="row valign-wrapper")
+                      div(class="col s1")
+                        span.name #{obj.Messages[0].User.first_name}
+                        img(src=`/images/${obj.Messages[0].User.avatar}` alt="" class="responsive-img")
+                      div(class="col s11")
+                        p #{obj.Messages[0].message}
+                        p #{obj.Messages[0].date}
+          else
+            p
+              |Your inbox is currently empty. Your inbox will become active after you have accepted an offer, or after someone accepts your offer.
+            p
+              |Click "My Requests" in the navigation bar to see if an offer was made for any of your requests.
         
     script
       include ../node_modules/jquery/dist/jquery.min.js

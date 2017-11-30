@@ -10,15 +10,18 @@ html
 
   body
     include partials/nav.pug
-    .container
-      p My Account
-      div(class="row valign-wrapper")
-                div(class="col s2")
-                  img(src=`/images/${user.avatar}` alt="profile image" class="responsive-img")
-                div(class="col s10") #{user.first_name} #{user.last_name}
-                    ul  
-                      li Email: #{user.email}
-                      li Friend Code: #{user.ds_code}
+    main
+      .container
+        p My Account
+        div(class="row valign-wrapper")
+                  div(class="col s2")
+                    img(src=`/images/${user.avatar}` alt="profile image" class="responsive-img")
+                  div(class="col s10") #{user.first_name} #{user.last_name}
+                      ul  
+                        li Email: #{user.email}
+                        li Friend Code: #{user.ds_code}
+
+    include partials/footer.pug
 
     script
       include ../node_modules/jquery/dist/jquery.min.js

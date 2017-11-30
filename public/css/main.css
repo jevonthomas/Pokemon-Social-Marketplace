@@ -1,3 +1,13 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 .index {
   height: 100vh;
   background-image: url("/images/background.jpg");
@@ -12,6 +22,10 @@
 
 .container {
   width: 90%;
+}
+
+li {
+  list-style: none;
 }
 
 .logo-index {
@@ -34,9 +48,31 @@
   margin: 0;
 }
 
-nav {
+nav, .page-footer {
   background-color: #7a4899;
 }
+
+nav {
+  margin: 0 0 25px 0;
+}
+
+.page-footer {
+  margin: 25px 0 0 0;
+}
+
+.footer-links {
+  font-size: 0.5em;
+  color: white;
+}
+
+.footer-links:visited {
+  color: #e708e0;
+}
+
+.footer-links:hover {
+  color: #e880e4;
+}
+
 
 .brand-logo img {
   padding-top: 10px;
