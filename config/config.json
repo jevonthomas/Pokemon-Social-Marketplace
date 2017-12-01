@@ -1,9 +1,9 @@
 {
   "production": {
-    "username": "ludoazauituhre",
-    "password": "74eb1ac0eb48dad113c1cec4298fb89c99faf29fe395d2c4466a7e450632e9f5",
-    "database": "d7gr16m4j0st6f",
-    "host": "ec2-54-235-65-224.compute-1.amazonaws.com",
+    "username": "svekilhuzwovsx",
+    "password": "238eaddc1c05a867252f98c27596b08d3688809228661b4236ab9851ff2c30e7",
+    "database": "dvh2jp7soje6r",
+    "host": "ec2-54-235-86-244.compute-1.amazonaws.com",
     "dialect": "postgres"
   }
 }
