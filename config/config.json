@@ -4,6 +4,6 @@
     "password": "74eb1ac0eb48dad113c1cec4298fb89c99faf29fe395d2c4466a7e450632e9f5",
     "database": "d7gr16m4j0st6f",
     "host": "ec2-54-235-65-224.compute-1.amazonaws.com",
-    "dialect": "mysql"
+    "dialect": "postgres"
   }
 }
