@@ -1,9 +1,9 @@
 {
   "production": {
-    "username": "vmhzswkcmnhedn",
-    "password": "175f0485a893e868a5ebbb3638023afe57a2951b21b1adeda094ef1c43e67435",
-    "database": "d981oskm9p0d68",
-    "host": "ec2-54-235-219-113.compute-1.amazonaws.com",
+    "username": "cklwmwxhhodhap",
+    "password": "d2432f97ba91bb0e4351c3f52448720c0719a811d9f0640d690f70bdbc08a12b",
+    "database": "dd5b6cmrph863b",
+    "host": "ec2-107-20-176-7.compute-1.amazonaws.com",
     "dialect": "postgres"
   }
 }
