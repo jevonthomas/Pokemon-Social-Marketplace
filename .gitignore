@@ -1,5 +1,9 @@
 node_modules
 .DS_Store
 .env
+<<<<<<< HEAD
 config/config.json
 client
+=======
+config/config.json
+>>>>>>> 01c846c665a485ac4d21e53b2d6e7558b36f9d86
