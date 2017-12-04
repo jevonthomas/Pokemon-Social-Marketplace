@@ -1,9 +1,0 @@
-{
-  "production": {
-    "username": "lrnihrzinwlrus",
-    "password": "5886873529a93410f29cbe074e3df85b54b36f6fec07e9e18f1d39ba1ccd2cc5",
-    "database": "dbcemhcoklab9f",
-    "host": "ec2-54-243-255-57.compute-1.amazonaws.com",
-    "dialect": "postgres"
-  }
-}
