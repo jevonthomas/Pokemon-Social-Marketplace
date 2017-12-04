@@ -2,7 +2,7 @@
   "production": {
     "username": "gbaysiipuoerol",
     "password": "59e5bb401b3246d1879c4cdf2498ab50aa51f2f841802a0f001cf6c13d0081a4",
-    "database": "dbi6jq9kf2g17s",
+    "database": "dbcgoui8h30qb0",
     "host": "ec2-23-21-220-167.compute-1.amazonaws.com",
     "dialect": "postgres"
   }
