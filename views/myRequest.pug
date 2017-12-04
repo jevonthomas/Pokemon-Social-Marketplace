@@ -4,7 +4,7 @@ block content
   body
     .container
       .row
-        if user.Request
+        if user.Requests
           each request in user.Requests
             div(class="col s12 m8 offset-m2 l4")
               div.border
@@ -18,7 +18,8 @@ block content
                         li Nature: #{request.nature}
                         li Ability: #{request.ability}
                         li Held Item: #{request.item}
-                a(class="btn purple-button" href=`${session.passport.user.id}/view/${request.id}`) View Details
+                a(class="btn pink-button col s6" href=`${session.passport.user.id}/view/${request.id}`) View Details
+                a(class="btn purple-button col s6" href=`/blue`) Delete
         else
           p
             |You currently have no requests. Click "Post New Request" in the navigation bar to request the Pokemon you are searching for.

@@ -310,3 +310,19 @@ module.exports.getSearchedOfferPokemon = (req, res, next) => {
     next(err);
   });
 };
+
+//This function deletes an entire user's request from the my requests page
+module.exports.deleteRequest = (req, res, next) => {
+  console.log("my nigga");
+  const { Request } = req.app.get('models');
+  Request.destroy({
+    where: {id:req.params.requestid}
+  })
+  .then( (request) => {
+    // res.send(JSON.stringify(user));
+    res.status(200).redirect(`request/user/${req.params.id}`);
+  })
+  .catch( (err) => {
+    next(err);
+  });
+};

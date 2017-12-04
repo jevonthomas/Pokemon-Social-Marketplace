@@ -1,4 +1,18 @@
 {
+  "development": {
+    "username": "postgres",
+    "password": "Tulloss2012",
+    "database": "pokemon2",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
   "production": {
     "username": "gbaysiipuoerol",
     "password": "59e5bb401b3246d1879c4cdf2498ab50aa51f2f841802a0f001cf6c13d0081a4",

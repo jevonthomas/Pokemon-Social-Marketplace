@@ -17,7 +17,8 @@ const { postRequest,
         getUserRequestTradeOffers,
         getTradeDetails,
         getSearchedPokemon,
-        getSearchedOfferPokemon } = require('../controllers/requestCtrl');
+        getSearchedOfferPokemon,
+        deleteRequest } = require('../controllers/requestCtrl');
 
 router.get('/request/user/:id', getUserRequests);
 router.get('/request/user/:id/view/:requestid', getUserRequestDetails);
@@ -37,5 +38,8 @@ router.post('/request/new/:id/:pokemonName/:userid', postRequest);
 router.post('/request/new/:id/:pokemonName/offer/choose-pokemon/:pokeid/:pokename', postOffer);
 
 router.put('/request/edit/:id', putUserRequest);
+
+//delete request
+router.get('/blue', deleteRequest);
 
 module.exports = router;
