@@ -15,7 +15,7 @@ html(lang="en")
   body
     div.index
       block content
-        .container.index-container
+        .container
           .index-form
             .row
               div(class="col s12")
@@ -30,8 +30,8 @@ html(lang="en")
                     input(class="white-text" type="password" placeholder="password" name="password")
                   .row
                     div(class="col s12")
-                      button(class="btn waves-effect waves-light pink-button" type="submit" name="action") login
-                button(id="showRegister" class="btn waves-effect waves-light purple-button" name="action") register
+                      button(class="btn waves-effect waves-light pink-button col s12" type="submit" name="action") login
+                button(id="showRegister" class="btn waves-effect waves-light purple-button col s12" name="action") register
         
     script
       include ../node_modules/jquery/dist/jquery.min.js
