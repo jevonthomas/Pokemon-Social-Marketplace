@@ -15,7 +15,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       ds_code: {
-        type: Sequelize.INTEGER
+        type: Sequelize.BIGINT
       },
       email: {
         type: Sequelize.STRING
